@@ -1,49 +1,67 @@
- /* Set height to 100% for body and html to enable the background image to cover the whole page: */
- body, html {
-    height: 100%;
-    margin: 0;
-    background-color: #00d886;
-    /* Add a white text color to all elements inside the .bgimg container */
-    color: white;
-    /* Add a font */
-    font-family: "Courier New", Courier, monospace;
-    /* Set the font-size to 25 pixels */
-    font-size: 25px;
-  }
-  
-  .main {
-    /* Full-screen */
-    height: 100%;
-  }
-  
-  /* Position text in the top-left corner */
-  .topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-  }
-  
-  /* Position text in the bottom-left corner */
-  .bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-  }
-  
-  /* Position text in the middle */
-  .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  /* Style the <hr> element */
-  hr {
-    margin: auto;
-    width: 40%;
-  } 
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #00d886;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+}
+
+.main {
+  /* Full-screen */
+  height: 100%;
+}
+
+/* Position text in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+} 
+
+/* Contact button */
+.contact-button {
+  border: 2px solid #e7e7e7;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: #00d886;
+}
 
   /* Spinner */
 .spinner {
@@ -128,3 +146,23 @@
     transform: scale(1.5);
   }
 }
+
+/* Responsive */
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {} 
