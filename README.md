@@ -1,2 +1,1 @@
-# website
-Projectwebsite
+# Website for the OpenAndroidInstaller project
