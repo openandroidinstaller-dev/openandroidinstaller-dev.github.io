@@ -1,78 +1,121 @@
 <!DOCTYPE html>
-<head>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <!-- META -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Tobias Sterbak">
-  <meta name="description"
-    content="OpenAndroidInstaller - Makes installing alternative Android distributions nice and easy.">
-  <meta name="referrer" content="unsafe-url">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="OpenAndroidInstaller">
-  <meta property="og:description"
-    content="OpenAndroidInstaller - Makes installing alternative Android distributions nice and easy.">
-  <meta property="og:image" content="static/preview.png">
-  <meta property="og:image:width" content="975">
-  <meta property="og:image:height" content="334">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenAndroidInstaller">
-  <meta name="twitter:creator" content="@OAInstaller">
-  <meta name="twitter:description"
-    content="OpenAndroidInstaller - Makes installing alternative Android distributions nice and easy.">
-  <meta name="twitter:image" content="static/preview.png">
-  <!-- LINK -->
-  <link rel="me" href="#">
-  <link rel="canonical" href="#">
-  <link rel="icon" type="image/png" href="static/favicon-32x32.png" sizes="32x32">
-  <!-- Tracking -->
-  <script defer data-domain="openandroidinstaller.org" src="https://plausible.io/js/plausible.js"></script>
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- TITLE -->
-  <title>OpenAndroidInstaller.</title>
-</head>
-
-<body>
-  <div class="main">
-    <div class="topleft">
-      <img src="static/oai-logo.jpg" width="50">
-    </div>
-    <div class="middle">
-      <h1>OpenAndroidInstaller</h1>
-      <p>Makes installing alternative Android distributions nice and easy.</p>
-      <div>
-        <a href="mailto:hello@openandroidinstaller.org" target="_blank">
-            <div class="contact-button"><i class="fa fa-envelope"></i> Contact</div>
-        </a>
-        <p></p>
-        <a href="https://twitter.com/OAInstaller" target="_blank">
-            <div class="contact-button"><i class="fa fa-twitter"></i> Twitter</div>
-        </a>
-        <p></p>
-        <a href="https://github.com/openandroidinstaller-dev/openandroidinstaller" target="_blank">
-            <div class="contact-button"><i class="fa fa-github"></i> Github</div>
-        </a>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Tobias Sterbak">
+    <meta name="description" content="#">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="robots" content="index, follow">
+    <!-- LINK -->
+    <link rel="me" href="#">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/png" href="#" sizes="48x48">
+    <!-- PERFORMANCE -->
+    <link rel="preload" as="style" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- TITLE -->
+    <title>OpenAndroidInstaller</title>
+  </head>
+  <body>
+    <!-- NAV-->
+    <header role="banner" class="ui-section-header"  style="background-color: #00d886;">
+        <div class="ui-layout-container">
+            <div class="ui-section-header__layout ui-layout-flex">
+                <a href="#" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary ui-component-button-icon"><span>Home</span></a>
+                <!-- HAMBURGER -->
+                <input type="checkbox" id="ui-section-header--menu-id">
+                <label for="ui-section-header--menu-id" class="ui-section-header--menu-icon"></label>
+                <!-- MENU -->
+                <nav role="navigation" class="ui-section-header--nav ui-layout-flex">
+                    <a href="https://github.com/openandroidinstaller-dev/openandroidinstaller#officially-supported-devices" role="link" aria-label="#"
+                        class="ui-component-button ui-component-button-normal ui-component-button-primary"><span>Supported Devices</span></a>
+                    <a href="https://github.com/openandroidinstaller-dev/openandroidinstaller" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary ui-component-button-icon"><span>Github</span></a>
+                    <a href="mailto:hello@openandroidinstaller.org" role="link" aria-label="#"
+                        class="cta ui-section-header--nav-link" id="nav-email-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="18" width="18">
+                            <path
+                                d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z" />
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+      <section class="ui-section-hero">
+        <div class="ui-layout-container">
+          <!-- COPYWRITING -->
+          <div class="ui-layout-column-6 ui-layout-column-center">
+            <h1>OpenAndroidInstaller</h1>
+            <p class="ui-text-intro">Makes installing alternative Android distributions nice and easy. Batteries inluded.</p>
+            <!-- CTA -->
+            <div class="ui-component-cta ui-layout-flex">
+              <a href="https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/latest" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary ui-component-button-icon">Download</a>
+    	      <a href="#get-started" role="link" aria-label="#get-started" class="ui-component-button ui-component-button-normal ui-component-button-primary ui-component-button-icon">Get started</a>
+            </div>
+            <p class="ui-text-note"><small>Works on Windows, MacOS and Linux.</small></p>
+          </div>
+          <!-- IMAGE -->
+          <img src="static/Screenshot-start-page.png" style="border: 5px; border-color: black; border-style:solid; border-radius: 5px;" loading="lazy" alt="#" class="ui-section-hero--image">
+        </div>
+      </section>
+      <section class="ui-section-feature">
+        <div class="ui-layout-container">
+          <h2>Nice Features</h2>
+          <p class="ui-text-intro">Lorem ipsum dolor sit amet.</p>
+          <!-- FEATURE -->
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-3">
+            <div class="ui-component-card ui-layout-column-4">
+              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/chat.png" loading="lazy" alt="#" class="ui-component-card--image">
+              <h4 class="ui-component-card--title">Lorem ipsum dolor.</h4>
+              <p>Lorem ipsum dolor sit amet sed eiusmod tempor incididunt.</p>
+            </div>
+            <div class="ui-component-card ui-layout-column-4">
+              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/chat.png" loading="lazy" alt="#" class="ui-component-card--image">
+              <h4 class="ui-component-card--title">Lorem ipsum dolor.</h4>
+              <p>Lorem ipsum dolor sit amet sed eiusmod tempor incididunt.</p>
+            </div>
+            <div class="ui-component-card ui-layout-column-4">
+              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/chat.png" loading="lazy" alt="#" class="ui-component-card--image">
+              <h4 class="ui-component-card--title">Lorem ipsum dolor.</h4>
+              <p>Lorem ipsum dolor sit amet sed eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ui-section-close">
+        <div class="ui-layout-container">
+          <div class="ui-layout-column-6 ui-layout-column-center">
+            <!-- LOGO -->
+            <svg viewBox="0 0 48 48" height="48" width="48" class="ui-section-close--logo">
+              <rect fill="#353535" height="48" width="48" rx="8"/>
+              <path fill="#FFF" d="M12 13h6v12a6 6 0 0012 0v-4h6v4c0 6.627-5.373 12-12 12s-12-5.373-12-12V13zm24 6v-6h-6v6h6z"/>
+            </svg>
+            <!-- COPYWRITING -->
+            <h2>Improve your work.</h2>
+            <p class="ui-text-intro">Lorem ipsum dolor sit amet consectetur.</p>
+            <!-- CTA -->
+            <div class="ui-component-cta ui-layout-flex">
+              <a href="#" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Add to Chrome &mdash; It&rsquo;s Free</a>
+              <p class="ui-text-note"><small>Firefox and Safari soon.</small></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo" class="ui-section-footer">
+      <div class="ui-layout-container">
+        <div class="ui-section-footer__layout ui-layout-flex">
+          <!-- COPYRIGHT -->
+          <p class="ui-section-footer--copyright ui-text-note"><small>&copy; 2022 OpenAndroidInstaller</small></p>
+          <!-- MENU -->
+          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Features</small></a>
+          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Help</small></a>
+          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Terms</small></a>
+        </div>
       </div>
-      <br>
-      <br>
-      <h3>Developing...</h3>
-      <div class="spinner">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div class="bottomleft">
-    </div>
-  </div>
-</body>
+    </footer>
+  </body>
+</html>
