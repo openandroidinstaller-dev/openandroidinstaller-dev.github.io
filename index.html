@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>App Page</title>
+  <title>OpenAndroidInstaller</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />-->
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
   <link rel="icon" href="static/favicon.ico">
-  <script src="/js/app-page.js"></script>
 </head>
 <body>
   <div>
@@ -30,8 +31,12 @@
         <div class="navbar-menu">
           <div class="navbar-start">
           	<a class="navbar-item" href="#">Get started</a>
-          	<a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller#officially-supported-devices" target="_blank">Supported Devices</a>
-          	<a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"  target="_blank">Source code</a>
+          	<a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller#officially-supported-devices" target="_blank">
+                <span class="icon"><i class="far fa-mobile"></i></i></span><span>Supported Devices</span>
+            </a>
+          	<a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller" target="_blank">
+                <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
+            </a>
           	<a class="navbar-item" href="mailto: hello@openandroidinstaller.org">Get help</a>
           </div>
           <div class="navbar-item">
@@ -56,24 +61,29 @@
 	<!-- NAV END -->
 	
 	<!-- Main -->
-    <section class="section">
-      <!-- Header -->
-      <div class="container">
-        <div class="mb-6 pb-3 columns is-multiline">
-          <div class="column is-12 is-6-desktop mx-auto has-text-centered">
-            <h2 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller</h2>
-            <p class="subtitle has-text-grey mb-5">Makes installing alternative Android distributions nice and easy.</p>
-            <div class="buttons is-centered">
-              <a class="mr-3" href="#">
-                <img src="../images/app-page/images/buttons/app-store.svg" alt=""></a>
-              <a href="#">
-                <img src="../images/app-page/images/buttons/google-play.svg" alt=""></a>
+    <!-- Header -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller</h1>
+                <h2 class="subtitle">Makes installing alternative Android distributions nice and easy.<h2>
+                <div class="buttons is-centered">
+                    <a class="control button is-primary" href="https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/v.0.3.0-alpha/openandroidinstaller-v0.3.0-alpha-ubuntu-latest-x86.zip">
+                        <span class="icon is-small">
+                            <i class="fas fa-download"></i>
+                        </span>
+                        <span>Download</span>
+                    </a>
+                    <a class="control button is-light" href="#getting-started">Getting started</a>
+                </div>
             </div>
-          </div>
         </div>
-        <!-- Header End -->
-        
-        <!-- Features -->
+    </section>
+    <!-- Header End -->
+
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
         <div class="columns is-multiline">
           <div class="column is-12 is-4-desktop">
             <div class="mb-6 is-flex">
@@ -85,7 +95,7 @@
                   <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
                 </svg></span>
               <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2">Batteries included</h4>
+                <h4 class="is-size-4 has-text-weight-bold mb-2">Works out-of-the-box</h4>
                 <p class="subtitle has-text-grey">Comes packaged with all tools like adb, fastboot and heimdall.</p>
               </div>
             </div>
@@ -116,7 +126,7 @@
                   <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
                 </svg></span>
               <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2">Free software (GPL-3.0 licenced)</h4>
+                <h4 class="is-size-4 has-text-weight-bold mb-2">Free & Open Source</h4>
                 <p class="subtitle has-text-grey">Bring your smartphone's operating system up to date with free software.</p>
               </div>
             </div>
@@ -129,16 +139,16 @@
                   <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
                 </svg></span>
               <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2">Supports many devices out-of-the-box</h4>
+                <h4 class="is-size-4 has-text-weight-bold mb-2">Supports many devices</h4>
                 <p class="subtitle has-text-grey">Build in support for 27 devices and an easy extention system.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Features End -->
     </section>
-	
+    <!-- Features End -->
+
 	<!-- Banner -->
     <section class="section has-background-primary">
       <div class="container">
@@ -154,7 +164,7 @@
             <div class="mx-auto box p-6 has-background-light has-text-centered">
               <h4 class="is-size-5 mb-2 has-text-weight-bold">Free your android device with a custom ROM!</h4>
               <p class="has-text-grey-dark mb-4">Works on Windows, MacOS and Linux.</p>
-              <a href="https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/v.0.3.0-alpha/openandroidinstaller-v0.3.0-alpha-ubuntu-latest-x86.zip" class="button is-primary is-fullwidth">Download now!</a>
+              <button class="button is-primary is-fullwidth">Download now!</button>
             </div>
           </div>
         </div>
@@ -175,34 +185,23 @@
         </div>
         <div class="column is-3">
           <a href="#">
-            <figure
-              class="image is-5by3 work-item"
-              style="background-image: url(static/Screenshot-start-page.png);"
-            ></figure>
+            <figure class="image is-5by3 work-item">
+              <img src="static/Screenshot-start-page.png"></img>
+            </figure>
           </a>
         </div>
         <div class="column is-3">
           <a href="#">
-            <figure
-              class="image is-2by1 work-item"
-              style="background-image: url(static/Screenshot-select-page.png);"
-            ></figure>
+            <figure class="image is-5by3 work-item">
+              <img src="static/Screenshot-requirements-page.png"></img>
+            </figure>
           </a>
         </div>
         <div class="column is-3">
           <a href="#">
-            <figure
-              class="image is-2by1 work-item"
-              style="background-image: url(static/Screenshot-requirements-page.png);"
-            ></figure>
-          </a>
-        </div>
-        <div class="column is-3">
-          <a href="#">
-            <figure
-              class="image is-2by1 work-item"
-              style="background-image: url('https://picsum.photos/320/180?image=20');"
-            ></figure>
+            <figure class="image is-5by3 work-item">
+              <img src="static/Screenshot-select-page.png"></img>
+            </figure>
           </a>
         </div>
       </div>
@@ -245,8 +244,6 @@
             <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
               <li class="mr-4"><a class="button is-white" href="#">About</a></li>
               <li class="mr-4"><a class="button is-white" href="#">Company</a></li>
-              <li class="mr-4"><a class="button is-white" href="#">Services</a></li>
-              <li><a class="button is-white" href="#">Testimonials</a></li>
             </ul>
           </div>
         </div>
