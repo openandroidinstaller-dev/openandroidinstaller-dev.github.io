@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>OpenAndroidInstaller</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />-->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />-->
   <link rel="stylesheet" href="static/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous" />
   <link rel="icon" href="static/favicon.ico">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+
+    });
+  </script>
 </head>
+
 <body>
   <div>
     <div class="columns is-multiline">
@@ -22,62 +49,54 @@
           <a class="navbar-item" href="#">
             <img class="image" src="static/oai-logo.jpg" alt="" width="30px">
           </a>
-          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div class="navbar-menu">
-          <div class="navbar-start">
-          	<a class="navbar-item" href="#">Get started</a>
-          	<a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller#officially-supported-devices" target="_blank">
-                <span class="icon"><i class="far fa-mobile"></i></i></span><span>Supported Devices</span>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#getting-started">
+              <span class="icon"><i class="fa fa-play"></i></i></span><span>Getting started</span>
             </a>
-          	<a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller" target="_blank">
-                <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
+            <a class="navbar-item"
+              href="https://github.com/openandroidinstaller-dev/openandroidinstaller#officially-supported-devices"
+              target="_blank">
+              <span class="icon"><i class="fa fa-mobile"></i></i></span><span>Supported Devices</span>
             </a>
-          	<a class="navbar-item" href="mailto: hello@openandroidinstaller.org">Get help</a>
-          </div>
-          <div class="navbar-item">
-            <div class="field has-addons">
-              <div class="control">
-                <input class="input" type="search" placeholder="Search" aria-label="Search">
-              </div>
-              <div class="control">
-                <button class="button" type="submit">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"
-                    style="width: 24px;height: 24px">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
+              target="_blank">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
+            </a>
+            <a class="navbar-item" href="mailto: hello@openandroidinstaller.org">
+              <span class="icon"><i class="fa fa-envelope"></i></span><span>Get Help</span>
+            </a>
           </div>
         </div>
       </div>
     </nav>
-	<!-- NAV END -->
-	
-	<!-- Main -->
+    <!-- NAV END -->
+
+    <!-- Main -->
     <!-- Header -->
     <section class="hero">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller</h1>
-                <h2 class="subtitle">Makes installing alternative Android distributions nice and easy.<h2>
-                <div class="buttons is-centered">
-                    <a class="control button is-primary" href="https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/v.0.3.0-alpha/openandroidinstaller-v0.3.0-alpha-ubuntu-latest-x86.zip">
-                        <span class="icon is-small">
-                            <i class="fas fa-download"></i>
-                        </span>
-                        <span>Download</span>
-                    </a>
-                    <a class="control button is-light" href="#getting-started">Getting started</a>
-                </div>
-            </div>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller</h1>
+          <h2 class="subtitle">Makes installing alternative Android distributions nice and easy.<h2>
+              <div class="buttons is-centered">
+                <a class="control button is-primary"
+                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/v.0.3.0-alpha/openandroidinstaller-v0.3.0-alpha-ubuntu-latest-x86.zip">
+                  <span class="icon is-small">
+                    <i class="fas fa-download"></i>
+                  </span>
+                  <span>Download</span>
+                </a>
+                <a class="control button is-light" href="#getting-started">Getting started</a>
+              </div>
         </div>
+      </div>
     </section>
     <!-- Header End -->
 
@@ -114,8 +133,8 @@
             </div>
           </div>
           <div class="column is-4 is-block-desktop is-hidden-touch">
-            <img class="mx-auto mt-0-widescreen is-block image" src="static/Screenshot-start-page.png"
-              alt=""></div>
+            <img class="mx-auto mt-0-widescreen is-block image" src="static/Screenshot-start-page.png" alt="">
+          </div>
           <div class="column is-12 is-4-desktop">
             <div class="mb-6 is-flex">
               <span>
@@ -127,7 +146,8 @@
                 </svg></span>
               <div class="ml-3">
                 <h4 class="is-size-4 has-text-weight-bold mb-2">Free & Open Source</h4>
-                <p class="subtitle has-text-grey">Bring your smartphone's operating system up to date with free software.</p>
+                <p class="subtitle has-text-grey">Bring your smartphone's operating system up to date with free
+                  software.</p>
               </div>
             </div>
             <div class="mb-6 is-flex">
@@ -149,16 +169,21 @@
     </section>
     <!-- Features End -->
 
-	<!-- Banner -->
+    <!-- Banner -->
     <section class="section has-background-primary">
       <div class="container">
         <div class="is-vcentered columns is-multiline">
           <div class="column is-6 is-5-desktop mb-4">
-            <span class="has-text-white">Lorem ipsum</span>
-            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Lorem ipsum dolor sit
-              amet consectutar</h2>
-            <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh,
-              pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
+            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Want to give your old
+              phone a second life or free your new phone?</h2>
+            <div class="has-text-white content">
+              <p>The OpenAndroidInstaller helps you installing a custom android operating system on your phone without
+                the technical hustle.</p>
+              <ul>
+                <li>Keep your smartphone up-to-date even if your vendor doesn't supply updates.</li>
+                <li>Run your smartphone without bloated vendor software or get rid of google.</li>
+              </ul>
+            </div>
           </div>
           <div class="column is-5 ml-auto">
             <div class="mx-auto box p-6 has-background-light has-text-centered">
@@ -170,69 +195,93 @@
         </div>
       </div>
     </section>
-	<!-- Banner End -->
-	
-	<!-- Screenshots -->
-	<section class="section" id="screenshots">
-    <div class="container">
-      <div
-        class="columns is-multiline"
-        data-aos="fade-in"
-        data-aos-easing="linear"
-      >
-        <div class="column is-12">
-          <h1 class="title has-text-centered section-title">Screenshots</h1>
+    <!-- Banner End -->
+
+    <!-- Screenshots 
+    <section class="section" id="screenshots">
+      <div class="container">
+        <div class="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
+          <div class="column is-12">
+            <h1 class="title has-text-centered section-title">Screenshots</h1>
+          </div>
+          <div class="column is-3">
+            <a href="#">
+              <figure class="image is-5by3 work-item">
+                <img src="static/Screenshot-start-page.png"></img>
+              </figure>
+            </a>
+          </div>
+          <div class="column is-3">
+            <a href="#">
+              <figure class="image is-5by3 work-item">
+                <img src="static/Screenshot-requirements-page.png"></img>
+              </figure>
+            </a>
+          </div>
+          <div class="column is-3">
+            <a href="#">
+              <figure class="image is-5by3 work-item">
+                <img src="static/Screenshot-select-page.png"></img>
+              </figure>
+            </a>
+          </div>
         </div>
-        <div class="column is-3">
-          <a href="#">
-            <figure class="image is-5by3 work-item">
-              <img src="static/Screenshot-start-page.png"></img>
-            </figure>
-          </a>
-        </div>
-        <div class="column is-3">
-          <a href="#">
-            <figure class="image is-5by3 work-item">
-              <img src="static/Screenshot-requirements-page.png"></img>
-            </figure>
-          </a>
-        </div>
-        <div class="column is-3">
-          <a href="#">
-            <figure class="image is-5by3 work-item">
-              <img src="static/Screenshot-select-page.png"></img>
-            </figure>
-          </a>
-        </div>
-      </div>
       </div>
     </section>
-	<!-- Screenshots End -->
-	
-	<!-- Contribution Banner -->
-    <section class="section has-background-primary">
+    Screenshots End -->
+
+    <!-- Getting started-->
+    <section class="section" id="getting-started">
       <div class="container">
         <div class="is-vcentered columns is-multiline">
           <div class="column is-6 is-5-desktop mb-4">
-            <span class="has-text-white">Lorem ipsum</span>
-            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Lorem ipsum dolor sit
-              amet consectutar</h2>
-            <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh,
-              pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
-          </div>
-          <div class="column is-5 ml-auto">
-            <div class="mx-auto box p-6 has-background-light has-text-centered">
-              <h4 class="is-size-5 mb-2 has-text-weight-bold">Free your android device with a custom ROM!</h4>
-              <p class="has-text-grey-dark mb-4">Works on Windows, MacOS and Linux.</p>
-              <button class="button is-primary is-fullwidth">Download now!</button>
+            <h2 class="mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Getting started</h2>
+            <div class="content">
+              <p>
+                Linux is currently the best supported platform (tested with Ubuntu 20.04 LTS). Windows and MacOS are also supported but you might experience more issues. So far there is no support for ARM-based systems.
+              </p>
+              <ul>
+                <li>Download the AppImage, .exe or appropriate executable file for your OS. You might need to change permissions to run the executable. (On Windows also install the Universal USB Drivers and other potentially drivers needed for your device.)</li>
+                <li>Download the lineageOS image and the custom recovery image. A source for files can be found on https://wiki.lineageos.org/devices/ or you can just search the web for an appropriate version for your device.</li>
+                <li>Start the desktop app and follow the instructions.</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-	<!-- Contribution Banner End -->
-	
-	<!-- Footer -->
+    <!-- Getting started End -->
+
+    <!-- Contribution Banner -->
+    <section class="section has-background-primary">
+      <div class="container">
+        <div class="is-vcentered columns is-multiline">
+          <div class="column is-6 is-5-desktop mb-4">
+            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">All kinds of
+              contributions are welcome!</h2>
+            <div class="content has-text-white">
+              <ul>
+                <li>Fix and improve texts in configs and in the application.</li>
+                <li>Test the tool for a supported device.</li>
+                <li>Create a config for a new device.</li>
+                <li>Test the application on your computer.</li>
+                <li>Contribute an application build for a new platform.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="column is-5 ml-auto">
+            <div class="mx-auto box p-6 has-background-light has-text-centered">
+              <a class="button is-primary is-fullwidth"
+                href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing">How to
+                contribute?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contribution Banner End -->
+
+    <!-- Footer -->
     <footer class="section">
       <div class="container">
         <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
@@ -242,8 +291,8 @@
           </div>
           <div>
             <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
-              <li class="mr-4"><a class="button is-white" href="#">About</a></li>
-              <li class="mr-4"><a class="button is-white" href="#">Company</a></li>
+              <li class="mr-4"><a class="button is-white" href="#">Imprint</a></li>
+              <li class="mr-4"><a class="button is-white" href="#">Privacy Statement</a></li>
             </ul>
           </div>
         </div>
@@ -254,16 +303,16 @@
           <p>All rights reserved © OpenAndroidInstaller 2022</p>
           <div class="py-2 is-hidden-tablet"></div>
           <div class="ml-auto">
-            <a class="mr-4 is-inline-block" href="#">
-              <img src="../images/app-page/socials/facebook.svg" alt=""></a>
-            <a class="mr-4 is-inline-block" href="#">
-              <img src="../images/app-page/socials/twitter.svg" alt=""></a>
-            <a class="mr-4 is-inline-block" href="#">
-              <img src="../images/app-page/socials/github.svg" alt=""></a>
-            <a class="mr-4 is-inline-block" href="#">
-              <img src="../images/app-page/socials/instagram.svg" alt=""></a>
-            <a class="is-inline-block" href="#">
-              <img src="../images/app-page/socials/linkedin.svg" alt=""></a>
+            <a class="mr-4 is-inline-block" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
+              target="_blank">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
+            </a>
+            <a class="mr-4 is-inline-block" href="https://twitter.com/OAInstaller" target="_blank">
+              <span class="icon"><i class="fab fa-twitter"></i></span><span>Twitter</span>
+            </a>
+            <a class="mr-4 is-inline-block" href="https://fosstodon.org/@openandroidinstaller" target="_blank">
+              <span class="icon"><i class="fab fa-mastodon"></i></span><span>Mastodon</span>
+            </a>
           </div>
         </div>
       </div>
