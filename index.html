@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     crossorigin="anonymous" />
   <link rel="icon" href="static/favicon.ico">
-
+  <script defer data-domain="openandroidinstaller.org" src="https://plausible.io/js/script.outbound-links.file-downloads.js"></script>
+  <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -86,14 +87,13 @@
           <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller</h1>
           <h2 class="subtitle">Makes installing alternative Android distributions nice and easy.<h2>
               <div class="buttons is-centered">
-                <a class="control button is-link" id="download-link1"
-                  href="#">
+                <a class="control button is-link" id="download-link1" href="#">
                   <span class="icon is-small">
                     <i class="fas fa-download"></i>
                   </span>
                   <span>Download</span>
                 </a>
-                <a class="control button is-light" href="#getting-started">Getting started</a>
+                <a class="control button is-light" href="#getting-started" id="getting-started-button">Getting started</a>
               </div>
         </div>
       </div>
@@ -243,9 +243,11 @@
               </p>
               <ul>
                 <li>Download the AppImage, .exe or appropriate executable file for your OS. You might need to change
-                  permissions to run the executable. (On Windows, also <a href="https://adb.clockworkmod.com/">install the Universal USB Drivers</a> and other
+                  permissions to run the executable. (On Windows, also <a href="https://adb.clockworkmod.com/">install
+                    the Universal USB Drivers</a> and other
                   potentially drivers needed for your device.)</li>
-                <li>Start the desktop app and follow the instructions. You might need to allow or enable the execution of the software.</li>
+                <li>Start the desktop app and follow the instructions. You might need to allow or enable the execution
+                  of the software.</li>
               </ul>
             </div>
           </div>
@@ -273,7 +275,7 @@
           </div>
           <div class="column is-5 ml-auto">
             <div class="mx-auto box p-6 has-background-light has-text-centered">
-              <a class="button is-link is-fullwidth"
+              <a class="button is-link is-fullwidth" id="contribute-button"
                 href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing">How to
                 contribute?</a>
             </div>
@@ -292,8 +294,12 @@
           </div>
           <div>
             <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
-              <li class="mr-4"><a class="button is-white" href="https://github.com/openandroidinstaller-dev/openandroidinstaller#acknowledgements" target="_blank">Funding</a></li>
-              <li class="mr-4"><a class="button is-white" href="https://github.com/openandroidinstaller-dev/openandroidinstaller#license" target="_blank">License</a></li>
+              <li class="mr-4"><a class="button is-white"
+                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller#acknowledgements"
+                  target="_blank">Funding</a></li>
+              <li class="mr-4"><a class="button is-white"
+                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller#license"
+                  target="_blank">License</a></li>
               <li class="mr-4"><a class="button is-white" href="#">Imprint</a></li>
               <li class="mr-4"><a class="button is-white" href="#">Privacy Statement</a></li>
             </ul>
@@ -336,4 +342,12 @@
   downloadLink1.setAttribute('href', url);
   downloadLink2.setAttribute('href', url);
 </script>
+<!-- Track button clicks-->
+<script>
+  document.getElementById('download-link1').addEventListener("click", function () { plausible('download-header'); });
+  document.getElementById('download-link2').addEventListener("click", function () { plausible('download-banner'); });
+  document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
+  document.getElementById('getting-started-button').addEventListener("click", function () { plausible('getting-started'); });
+</script>
+
 </html>
