@@ -1,78 +1,339 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <!-- META -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Tobias Sterbak">
-  <meta name="description"
-    content="OpenAndroidInstaller - Makes installing alternative Android distributions nice and easy.">
-  <meta name="referrer" content="unsafe-url">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="OpenAndroidInstaller">
-  <meta property="og:description"
-    content="OpenAndroidInstaller - Makes installing alternative Android distributions nice and easy.">
-  <meta property="og:image" content="static/preview.png">
-  <meta property="og:image:width" content="975">
-  <meta property="og:image:height" content="334">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenAndroidInstaller">
-  <meta name="twitter:creator" content="@OAInstaller">
-  <meta name="twitter:description"
-    content="OpenAndroidInstaller - Makes installing alternative Android distributions nice and easy.">
-  <meta name="twitter:image" content="static/preview.png">
-  <!-- LINK -->
-  <link rel="me" href="#">
-  <link rel="canonical" href="#">
-  <link rel="icon" type="image/png" href="static/favicon-32x32.png" sizes="32x32">
-  <!-- Tracking -->
-  <script defer data-domain="openandroidinstaller.org" src="https://plausible.io/js/plausible.js"></script>
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- TITLE -->
-  <title>OpenAndroidInstaller.</title>
+  <title>OpenAndroidInstaller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />-->
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous" />
+  <link rel="icon" href="static/favicon.ico">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+
+    });
+  </script>
 </head>
 
 <body>
-  <div class="main">
-    <div class="topleft">
-      <img src="static/oai-logo.jpg" width="50">
+  <div>
+    <div class="columns is-multiline">
     </div>
-    <div class="middle">
-      <h1>OpenAndroidInstaller</h1>
-      <p>Makes installing alternative Android distributions nice and easy.</p>
-      <div>
-        <a href="mailto:hello@openandroidinstaller.org" target="_blank">
-            <div class="contact-button"><i class="fa fa-envelope"></i> Contact</div>
-        </a>
-        <p></p>
-        <a href="https://twitter.com/OAInstaller" target="_blank">
-            <div class="contact-button"><i class="fa fa-twitter"></i> Twitter</div>
-        </a>
-        <p></p>
-        <a href="https://github.com/openandroidinstaller-dev/openandroidinstaller" target="_blank">
-            <div class="contact-button"><i class="fa fa-github"></i> Github</div>
-        </a>
+    <!-- NAV -->
+    <nav class="navbar py-4">
+      <div class="container is-fluid">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img class="image" src="static/oai-logo.jpg" alt="" width="30px">
+          </a>
+          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#getting-started">
+              <span class="icon"><i class="fa fa-play"></i></i></span><span>Getting started</span>
+            </a>
+            <a class="navbar-item"
+              href="https://github.com/openandroidinstaller-dev/openandroidinstaller#officially-supported-devices"
+              target="_blank">
+              <span class="icon"><i class="fa fa-mobile"></i></i></span><span>Supported Devices</span>
+            </a>
+            <a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
+              target="_blank">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
+            </a>
+            <a class="navbar-item" href="mailto: hello@openandroidinstaller.org">
+              <span class="icon"><i class="fa fa-envelope"></i></span><span>Get Help</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <br>
-      <br>
-      <h3>Developing...</h3>
-      <div class="spinner">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    </nav>
+    <!-- NAV END -->
+
+    <!-- Main -->
+    <!-- Header -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller</h1>
+          <h2 class="subtitle">Makes installing alternative Android distributions nice and easy.<h2>
+              <div class="buttons is-centered">
+                <a class="control button is-link" id="download-link1"
+                  href="#">
+                  <span class="icon is-small">
+                    <i class="fas fa-download"></i>
+                  </span>
+                  <span>Download</span>
+                </a>
+                <a class="control button is-light" href="#getting-started">Getting started</a>
+              </div>
+        </div>
       </div>
-    </div>
-    <div class="bottomleft">
-    </div>
+    </section>
+    <!-- Header End -->
+
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-12 is-4-desktop">
+            <div class="mb-6 is-flex">
+              <span>
+                <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.6 22.9C25.7 23 25.8 23 26 23H33C33.6 23 34 22.6 34 22C34 21.8 34 21.7 33.9 21.6L30.4 14.6C30.1 14.1 29.5 13.9 29 14.2C28.9 14.3 28.7 14.4 28.6 14.6L25.1 21.6C24.9 22 25.1 22.6 25.6 22.9ZM29.5 17.2L31.4 21H27.6L29.5 17.2ZM18.5 14C16 14 14 16 14 18.5C14 21 16 23 18.5 23C21 23 23 21 23 18.5C23 16 21 14 18.5 14ZM18.5 21C17.1 21 16 19.9 16 18.5C16 17.1 17.1 16 18.5 16C19.9 16 21 17.1 21 18.5C21 19.9 19.9 21 18.5 21ZM22.7 25.3C22.3 24.9 21.7 24.9 21.3 25.3L18.5 28.1L15.7 25.3C15.3 24.9 14.7 24.9 14.3 25.3C13.9 25.7 13.9 26.3 14.3 26.7L17.1 29.5L14.3 32.3C13.9 32.7 13.9 33.3 14.3 33.7C14.7 34.1 15.3 34.1 15.7 33.7L18.5 30.9L21.3 33.7C21.7 34.1 22.3 34.1 22.7 33.7C23.1 33.3 23.1 32.7 22.7 32.3L19.9 29.5L22.7 26.7C23.1 26.3 23.1 25.7 22.7 25.3ZM33 25H26C25.4 25 25 25.4 25 26V33C25 33.6 25.4 34 26 34H33C33.6 34 34 33.6 34 33V26C34 25.4 33.6 25 33 25ZM32 32H27V27H32V32Z"
+                    fill="#34623F"></path>
+                  <circle cx="24" cy="24" r="23.5" stroke="#34623F"></circle>
+                </svg></span>
+              <div class="ml-3">
+                <h4 class="is-size-4 has-text-weight-bold mb-2">Works out-of-the-box</h4>
+                <p class="subtitle has-text-grey">Comes packaged with all tools like adb, fastboot and heimdall.</p>
+              </div>
+            </div>
+            <div class="mb-6 is-flex">
+              <span>
+                <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.6 22.9C25.7 23 25.8 23 26 23H33C33.6 23 34 22.6 34 22C34 21.8 34 21.7 33.9 21.6L30.4 14.6C30.1 14.1 29.5 13.9 29 14.2C28.9 14.3 28.7 14.4 28.6 14.6L25.1 21.6C24.9 22 25.1 22.6 25.6 22.9ZM29.5 17.2L31.4 21H27.6L29.5 17.2ZM18.5 14C16 14 14 16 14 18.5C14 21 16 23 18.5 23C21 23 23 21 23 18.5C23 16 21 14 18.5 14ZM18.5 21C17.1 21 16 19.9 16 18.5C16 17.1 17.1 16 18.5 16C19.9 16 21 17.1 21 18.5C21 19.9 19.9 21 18.5 21ZM22.7 25.3C22.3 24.9 21.7 24.9 21.3 25.3L18.5 28.1L15.7 25.3C15.3 24.9 14.7 24.9 14.3 25.3C13.9 25.7 13.9 26.3 14.3 26.7L17.1 29.5L14.3 32.3C13.9 32.7 13.9 33.3 14.3 33.7C14.7 34.1 15.3 34.1 15.7 33.7L18.5 30.9L21.3 33.7C21.7 34.1 22.3 34.1 22.7 33.7C23.1 33.3 23.1 32.7 22.7 32.3L19.9 29.5L22.7 26.7C23.1 26.3 23.1 25.7 22.7 25.3ZM33 25H26C25.4 25 25 25.4 25 26V33C25 33.6 25.4 34 26 34H33C33.6 34 34 33.6 34 33V26C34 25.4 33.6 25 33 25ZM32 32H27V27H32V32Z"
+                    fill="#34623F"></path>
+                  <circle cx="24" cy="24" r="23.5" stroke="#34623F"></circle>
+                </svg></span>
+              <div class="ml-3">
+                <h4 class="is-size-4 has-text-weight-bold mb-2">Bring your own ROM</h4>
+                <p class="subtitle has-text-grey">Supports all kinds of different android ROMs with TWRP recovery.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4 is-block-desktop is-hidden-touch">
+            <img class="mx-auto mt-0-widescreen is-block image" src="static/Screenshot-start-page.png" alt="">
+          </div>
+          <div class="column is-12 is-4-desktop">
+            <div class="mb-6 is-flex">
+              <span>
+                <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.6 22.9C25.7 23 25.8 23 26 23H33C33.6 23 34 22.6 34 22C34 21.8 34 21.7 33.9 21.6L30.4 14.6C30.1 14.1 29.5 13.9 29 14.2C28.9 14.3 28.7 14.4 28.6 14.6L25.1 21.6C24.9 22 25.1 22.6 25.6 22.9ZM29.5 17.2L31.4 21H27.6L29.5 17.2ZM18.5 14C16 14 14 16 14 18.5C14 21 16 23 18.5 23C21 23 23 21 23 18.5C23 16 21 14 18.5 14ZM18.5 21C17.1 21 16 19.9 16 18.5C16 17.1 17.1 16 18.5 16C19.9 16 21 17.1 21 18.5C21 19.9 19.9 21 18.5 21ZM22.7 25.3C22.3 24.9 21.7 24.9 21.3 25.3L18.5 28.1L15.7 25.3C15.3 24.9 14.7 24.9 14.3 25.3C13.9 25.7 13.9 26.3 14.3 26.7L17.1 29.5L14.3 32.3C13.9 32.7 13.9 33.3 14.3 33.7C14.7 34.1 15.3 34.1 15.7 33.7L18.5 30.9L21.3 33.7C21.7 34.1 22.3 34.1 22.7 33.7C23.1 33.3 23.1 32.7 22.7 32.3L19.9 29.5L22.7 26.7C23.1 26.3 23.1 25.7 22.7 25.3ZM33 25H26C25.4 25 25 25.4 25 26V33C25 33.6 25.4 34 26 34H33C33.6 34 34 33.6 34 33V26C34 25.4 33.6 25 33 25ZM32 32H27V27H32V32Z"
+                    fill="#34623F"></path>
+                  <circle cx="24" cy="24" r="23.5" stroke="#34623F"></circle>
+                </svg></span>
+              <div class="ml-3">
+                <h4 class="is-size-4 has-text-weight-bold mb-2">Free & Open Source</h4>
+                <p class="subtitle has-text-grey">Bring your smartphone's operating system up to date with free
+                  software.</p>
+              </div>
+            </div>
+            <div class="mb-6 is-flex">
+              <span>
+                <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.6 22.9C25.7 23 25.8 23 26 23H33C33.6 23 34 22.6 34 22C34 21.8 34 21.7 33.9 21.6L30.4 14.6C30.1 14.1 29.5 13.9 29 14.2C28.9 14.3 28.7 14.4 28.6 14.6L25.1 21.6C24.9 22 25.1 22.6 25.6 22.9ZM29.5 17.2L31.4 21H27.6L29.5 17.2ZM18.5 14C16 14 14 16 14 18.5C14 21 16 23 18.5 23C21 23 23 21 23 18.5C23 16 21 14 18.5 14ZM18.5 21C17.1 21 16 19.9 16 18.5C16 17.1 17.1 16 18.5 16C19.9 16 21 17.1 21 18.5C21 19.9 19.9 21 18.5 21ZM22.7 25.3C22.3 24.9 21.7 24.9 21.3 25.3L18.5 28.1L15.7 25.3C15.3 24.9 14.7 24.9 14.3 25.3C13.9 25.7 13.9 26.3 14.3 26.7L17.1 29.5L14.3 32.3C13.9 32.7 13.9 33.3 14.3 33.7C14.7 34.1 15.3 34.1 15.7 33.7L18.5 30.9L21.3 33.7C21.7 34.1 22.3 34.1 22.7 33.7C23.1 33.3 23.1 32.7 22.7 32.3L19.9 29.5L22.7 26.7C23.1 26.3 23.1 25.7 22.7 25.3ZM33 25H26C25.4 25 25 25.4 25 26V33C25 33.6 25.4 34 26 34H33C33.6 34 34 33.6 34 33V26C34 25.4 33.6 25 33 25ZM32 32H27V27H32V32Z"
+                    fill="#34623F"></path>
+                  <circle cx="24" cy="24" r="23.5" stroke="#34623F"></circle>
+                </svg></span>
+              <div class="ml-3">
+                <h4 class="is-size-4 has-text-weight-bold mb-2">Supports many devices</h4>
+                <p class="subtitle has-text-grey">Build in support for 27 devices and an easy extension system.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features End -->
+
+    <!-- Banner -->
+    <section class="section has-background-primary">
+      <div class="container">
+        <div class="is-vcentered columns is-multiline">
+          <div class="column is-6 is-5-desktop mb-4">
+            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Want to give your old
+              phone a second life or free your new phone?</h2>
+            <div class="has-text-white content">
+              <p>The OpenAndroidInstaller helps you installing a custom android operating system on your phone without
+                the technical hustle.</p>
+              <ul>
+                <li>Keep your smartphone up-to-date even if your vendor doesn't supply updates.</li>
+                <li>Run your smartphone without bloated vendor software or get rid of google.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="column is-5 ml-auto">
+            <div class="mx-auto box p-6 has-background-light has-text-centered">
+              <h4 class="is-size-5 mb-2 has-text-weight-bold">Free your android device with a custom ROM!</h4>
+              <p class="has-text-grey-dark mb-4">Works on Windows, MacOS and Linux.</p>
+              <a class="button is-link is-fullwidth" href="#" id="download-link2">Download now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- Screenshots 
+    <section class="section" id="screenshots">
+      <div class="container">
+        <div class="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
+          <div class="column is-12">
+            <h1 class="title has-text-centered section-title">Screenshots</h1>
+          </div>
+          <div class="column is-3">
+            <a href="#">
+              <figure class="image is-5by3 work-item">
+                <img src="static/Screenshot-start-page.png"></img>
+              </figure>
+            </a>
+          </div>
+          <div class="column is-3">
+            <a href="#">
+              <figure class="image is-5by3 work-item">
+                <img src="static/Screenshot-requirements-page.png"></img>
+              </figure>
+            </a>
+          </div>
+          <div class="column is-3">
+            <a href="#">
+              <figure class="image is-5by3 work-item">
+                <img src="static/Screenshot-select-page.png"></img>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    Screenshots End -->
+
+    <!-- Getting started-->
+    <section class="section" id="getting-started">
+      <div class="container">
+        <div class="is-vcentered columns is-multiline">
+          <div class="column is-6 is-5-desktop mb-4">
+            <h2 class="mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Getting started</h2>
+            <div class="content">
+              <p>
+                Linux is currently the best supported platform (tested with Ubuntu 20.04 LTS). Windows and MacOS are
+                also supported but you might experience more issues. So far there is no support for ARM-based systems.
+              </p>
+              <ul>
+                <li>Download the AppImage, .exe or appropriate executable file for your OS. You might need to change
+                  permissions to run the executable. (On Windows, also <a href="https://adb.clockworkmod.com/">install the Universal USB Drivers</a> and other
+                  potentially drivers needed for your device.)</li>
+                <li>Start the desktop app and follow the instructions. You might need to allow or enable the execution of the software.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Getting started End -->
+
+    <!-- Contribution Banner -->
+    <section class="section has-background-primary">
+      <div class="container">
+        <div class="is-vcentered columns is-multiline">
+          <div class="column is-6 is-5-desktop mb-4">
+            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">All kinds of
+              contributions are welcome!</h2>
+            <div class="content has-text-white">
+              <ul>
+                <li>Fix and improve texts in configs and in the application.</li>
+                <li>Test the tool for a supported device.</li>
+                <li>Create a config for a new device.</li>
+                <li>Test the application on your computer.</li>
+                <li>Contribute an application build for a new platform.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="column is-5 ml-auto">
+            <div class="mx-auto box p-6 has-background-light has-text-centered">
+              <a class="button is-link is-fullwidth"
+                href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing">How to
+                contribute?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contribution Banner End -->
+
+    <!-- Footer -->
+    <footer class="section">
+      <div class="container">
+        <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
+          <div class="mr-auto mb-2">
+            <a class="is-inline-block" href="#"><img class="image" src="static/oai-logo.jpg" alt="" width="48px"></a>
+          </div>
+          <div>
+            <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+              <li class="mr-4"><a class="button is-white" href="https://github.com/openandroidinstaller-dev/openandroidinstaller#acknowledgements" target="_blank">Funding</a></li>
+              <li class="mr-4"><a class="button is-white" href="https://github.com/openandroidinstaller-dev/openandroidinstaller#license" target="_blank">License</a></li>
+              <li class="mr-4"><a class="button is-white" href="#">Imprint</a></li>
+              <li class="mr-4"><a class="button is-white" href="#">Privacy Statement</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+      <div class="container">
+        <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+          <p>All rights reserved © OpenAndroidInstaller 2022</p>
+          <div class="py-2 is-hidden-tablet"></div>
+          <div class="ml-auto">
+            <a class="mr-4 is-inline-block" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
+              target="_blank">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
+            </a>
+            <a class="mr-4 is-inline-block" href="https://twitter.com/OAInstaller" target="_blank">
+              <span class="icon"><i class="fab fa-twitter"></i></span><span>Twitter</span>
+            </a>
+            <a class="mr-4 is-inline-block" href="https://fosstodon.org/@openandroidinstaller" target="_blank">
+              <span class="icon"><i class="fab fa-mastodon"></i></span><span>Mastodon</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
   </div>
 </body>
+<!-- Script to determine the users OS and deliver the correct download link.-->
+<script>
+  var downloadLink1 = document.getElementById('download-link1');
+  var downloadLink2 = document.getElementById('download-link2');
+  var os = "ubuntu"
+  if (navigator.appVersion.indexOf("Win") != -1) os = "windows";
+  if (navigator.appVersion.indexOf("Mac") != -1) os = "macos";
+  if (navigator.appVersion.indexOf("X11") != -1) os = "ubuntu";
+  if (navigator.appVersion.indexOf("Linux") != -1) os = "ubuntu";
+  var url = `https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/v.0.3.0-alpha/openandroidinstaller-v0.3.0-alpha-${os}-latest-x86.zip`
+  downloadLink1.setAttribute('href', url);
+  downloadLink2.setAttribute('href', url);
+</script>
+</html>
