@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "openandroidinstaller-dev-github-io"
+version = "0.1.0"
+description = ""
+authors = ["Tobias Sterbak <sterbak-it@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Jinja2 = "^3.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
