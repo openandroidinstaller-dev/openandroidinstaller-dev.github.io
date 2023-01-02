@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Tobias Sterbak">
+  <meta name="description" content="Makes installing alternative Android distributions like LineageOS nice and easy.">
+  <meta name="referrer" content="unsafe-url">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Supported Devices | OpenAndroidInstaller">
+  <meta property="og:description"
+    content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
+  <meta property="og:image" content="static/preview-header.png">
+  <meta property="og:image:width" content="700" />
+  <meta property="og:image:height" content="280" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Supported Devices | OpenAndroidInstaller">
+  <meta name="twitter:creator" content="@oainstaller">
+  <meta name="twitter:description"
+    content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
+  <meta name="twitter:image" content="static/preview-header.png">
+  <title>Supported Devices | OpenAndroidInstaller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />-->
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous" />
+  <link rel="icon" href="static/favicon.ico">
+  <script defer data-domain="openandroidinstaller.org"
+    src="https://plausible.io/js/script.outbound-links.file-downloads.js"></script>
+  <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <div>
+    <div class="columns is-multiline">
+    </div>
+    <!-- NAV -->
+    <nav class="navbar py-4">
+      <div class="container is-fluid">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://openandroidinstaller.org/">
+            <img class="image" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo" width="30px" height="30px">
+          </a>
+          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="https://openandroidinstaller.org/#getting-started">
+              <span class="icon"><i class="fa fa-play"></i></i></span><span>Getting started</span>
+            </a>
+            <a class="navbar-item" href="https://openandroidinstaller.org/supported-devices.html" target="_blank">
+              <span class="icon"><i class="fa fa-mobile"></i></i></span><span>Supported Devices</span>
+            </a>
+            <a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
+              target="_blank">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
+            </a>
+            <a class="navbar-item" href="mailto: hello@openandroidinstaller.org">
+              <span class="icon"><i class="fa fa-envelope"></i></span><span>Get Help</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAV END -->
+
+    <!-- Main -->
+    <!-- Header -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">Officially supported Devices |
+            OpenAndroidInstaller</h1>
+          <h2 class="subtitle">Currently, the <strong>we support 32 devices</strong> by various vendors and working on
+            adding more soon!</h2>
+        </div>
+      </div>
+    </section>
+    <!-- Header End -->
+
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="column is-two-thirds is-offset-2">
+          <article class="message is-warning">
+            <div class="message-header">
+              <p>Warning</p>
+            </div>
+            <div class="message-body">
+              Support for these devices is provided as best effort, but things might still go wrong.
+              Help to improve the tool by reporting any issues you might face.
+            </div>
+          </article>
+          <table class="table is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th>Vendor</th>
+                <th>Device Name</th>
+                <th>CodeName</th>
+                <th>Models</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Samsung</td>
+                <td>Galaxy J7 2015</td>
+                <td>j7elte</td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Samsung</td>
+                <td>Galaxy A3 2017</td>
+                <td>a3y17lte</td>
+                <td>SM-A320FL</td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Samsung</td>
+                <td>Galaxy A5 2016</td>
+                <td><a href="https://wiki.lineageos.org/devices/a5xelte/">a5xelte</a></td>
+                <td>SM-A510F</td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Samsung</td>
+                <td>Galaxy A7 2016</td>
+                <td>a7xelte</td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Samsung</td>
+                <td>Galaxy S7</td>
+                <td><a href="https://wiki.lineageos.org/devices/herolte/">herolte</a></td>
+                <td>SM-G930F</td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Samsung</td>
+                <td>Galaxy S9</td>
+                <td><a href="https://wiki.lineageos.org/devices/starlte/">starlte</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Samsung</td>
+                <td>Galaxy Note 9</td>
+                <td><a href="https://wiki.lineageos.org/devices/crownlte/">crownlte</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Samsung</td>
+                <td>Galaxy S10</td>
+                <td><a href="https://wiki.lineageos.org/devices/beyond1lte/">beyond1lte</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Samsung</td>
+                <td>Galaxy Note 10</td>
+                <td><a href="https://wiki.lineageos.org/devices/d1/">d1</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Google</td>
+                <td>Pixel 3a</td>
+                <td><a href="https://wiki.lineageos.org/devices/sargo/">sargo</a></td>
+                <td>sargo</td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Google</td>
+                <td>Pixel 4</td>
+                <td><a href="https://wiki.lineageos.org/devices/flame/">flame</a></td>
+                <td>flame</td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Google</td>
+                <td>Pixel 4a</td>
+                <td><a href="https://wiki.lineageos.org/devices/sunfish/">sunfish</a></td>
+                <td>sunfish</td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Google</td>
+                <td>Pixel 5</td>
+                <td><a href="https://wiki.lineageos.org/devices/redfin/">redfin</a></td>
+                <td>redfin</td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Google</td>
+                <td>Pixel 5a</td>
+                <td><a href="https://wiki.lineageos.org/devices/barbet/">barbet</a></td>
+                <td>barbet</td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Sony</td>
+                <td>Xperia Z</td>
+                <td><a href="https://wiki.lineageos.org/devices/yuga/">yuga</a></td>
+                <td>C6603</td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Sony</td>
+                <td>Xperia Z3</td>
+                <td><a href="https://wiki.lineageos.org/devices/z3/">z3</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Sony</td>
+                <td>Xperia 10</td>
+                <td><a href="https://wiki.lineageos.org/devices/kirin/">kirin</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Sony</td>
+                <td>Xperia 10 Plus</td>
+                <td><a href="https://wiki.lineageos.org/devices/mermaid/">mermaid</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Sony</td>
+                <td>Xperia XA2</td>
+                <td><a href="https://wiki.lineageos.org/devices/pioneer/">pioneer</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Sony</td>
+                <td>Xperia XZ2</td>
+                <td><a href="https://wiki.lineageos.org/devices/akari/">akari</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Sony</td>
+                <td>Xperia XZ3</td>
+                <td><a href="https://wiki.lineageos.org/devices/akatsuki/">akatsuki</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Sony</td>
+                <td>Xperia ZX</td>
+                <td>kagura</td>
+                <td></td>
+                <td><span class="tag is-warning">under development</span></td>
+              </tr>
+              <tr>
+                <td>Fairphone</td>
+                <td>Fairphone 2</td>
+                <td><a href="https://wiki.lineageos.org/devices/FP2/">FP2</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Fairphone</td>
+                <td>Fairphone 3</td>
+                <td><a href="https://wiki.lineageos.org/devices/FP3/">FP3</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Motorola</td>
+                <td>moto G5</td>
+                <td><a href="https://wiki.lineageos.org/devices/cedric/">cedric</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>Motorola</td>
+                <td>moto g7 power</td>
+                <td><a href="https://wiki.lineageos.org/devices/ocean/">ocean</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>OnePlus</td>
+                <td>6</td>
+                <td><a href="https://wiki.lineageos.org/devices/enchilada/">enchilada</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>OnePlus</td>
+                <td>6T</td>
+                <td><a href="https://wiki.lineageos.org/devices/fajita/">fajita</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>OnePlus</td>
+                <td>7</td>
+                <td><a href="https://wiki.lineageos.org/devices/guacamoleb/">guacamoleb</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>OnePlus</td>
+                <td>7 Pro</td>
+                <td><a href="https://wiki.lineageos.org/devices/guacamole/">guacamole</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>OnePlus</td>
+                <td>7T</td>
+                <td><a href="https://wiki.lineageos.org/devices/hotdogb/">hotdogb</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>OnePlus</td>
+                <td>7T Pro</td>
+                <td><a href="https://wiki.lineageos.org/devices/hotdog/">hotdog</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>OnePlus</td>
+                <td>Nord N200</td>
+                <td><a href="https://wiki.lineageos.org/devices/dre/">dre</a></td>
+                <td></td>
+                <td><span class="tag is-success">tested</span></td>
+              </tr>
+              <tr>
+                <td>OnePlus</td>
+                <td>9</td>
+                <td>lemonade</td>
+                <td></td>
+                <td><span class="tag is-warning">under development</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </section>
+    <!-- Features End -->
+
+    <!-- Contribution Banner -->
+    <section class="section has-background-primary">
+      <div class="container">
+        <div class="is-vcentered columns is-multiline">
+          <div class="column is-6 is-5-desktop mb-4">
+            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">All kinds of
+              contributions are welcome!</h2>
+            <div class="content has-text-white">
+              <ul>
+                <li>Fix and improve texts in configs and in the application.</li>
+                <li>Test the tool for a supported device.</li>
+                <li>Create a config for a new device.</li>
+                <li>Test the application on your computer.</li>
+                <li>Contribute an application build for a new platform.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="column is-5 ml-auto">
+            <div class="mx-auto box p-6 has-background-light has-text-centered">
+              <a class="button is-link is-fullwidth" id="contribute-button"
+                href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing">How to
+                contribute?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contribution Banner End -->
+
+    <!-- Footer -->
+    <footer class="section">
+      <div class="container">
+        <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
+          <div class="mr-auto mb-2">
+            <a class="is-inline-block" href="https://openandroidinstaller.org/"><img class="image"
+                src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo" width="48px"></a>
+          </div>
+          <div>
+            <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+              <li class="mr-4"><a class="button is-white"
+                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller#acknowledgements"
+                  target="_blank">Funding</a></li>
+              <li class="mr-4"><a class="button is-white"
+                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller#license"
+                  target="_blank">License</a></li>
+              <li class="mr-4"><a class="button is-white" href="#">Imprint</a></li>
+              <li class="mr-4"><a class="button is-white" href="#">Privacy Statement</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+      <div class="container">
+        <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+          <p>All rights reserved © OpenAndroidInstaller 2023</p>
+          <div class="py-2 is-hidden-tablet"></div>
+          <div class="ml-auto">
+            <a class="mr-4 is-inline-block" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
+              target="_blank">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
+            </a>
+            <a class="mr-4 is-inline-block" href="https://twitter.com/OAInstaller" target="_blank">
+              <span class="icon"><i class="fab fa-twitter"></i></span><span>Twitter</span>
+            </a>
+            <a rel="me" class="mr-4 is-inline-block" href="https://fosstodon.org/@openandroidinstaller" target="_blank">
+              <span class="icon"><i class="fab fa-mastodon"></i></span><span>Mastodon</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </div>
+</body>
+<!-- Script to determine the users OS and deliver the correct download link.-->
+<script>
+  var downloadLink1 = document.getElementById('download-link1');
+  var downloadLink2 = document.getElementById('download-link2');
+  var os = "ubuntu"
+  if (navigator.appVersion.indexOf("Win") != -1) os = "windows";
+  if (navigator.appVersion.indexOf("Mac") != -1) os = "macos";
+  if (navigator.appVersion.indexOf("X11") != -1) os = "ubuntu";
+  if (navigator.appVersion.indexOf("Linux") != -1) os = "ubuntu";
+  var url = `https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/v0.3.1-alpha/openandroidinstaller-v0.3.1-alpha-${os}-latest.zip`
+  downloadLink1.setAttribute('href', url);
+  downloadLink2.setAttribute('href', url);
+</script>
+<!-- Track button clicks-->
+<script>
+  document.getElementById('download-link1').addEventListener("click", function () { plausible('download-header'); });
+  document.getElementById('download-link2').addEventListener("click", function () { plausible('download-banner'); });
+  document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
+  document.getElementById('getting-started-button').addEventListener("click", function () { plausible('getting-started'); });
+</script>
+
+</html>
