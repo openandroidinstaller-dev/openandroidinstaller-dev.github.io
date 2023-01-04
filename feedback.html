@@ -233,19 +233,6 @@
     <!-- Footer End -->
   </div>
 </body>
-<!-- Script to determine the users OS and deliver the correct download link.-->
-<script>
-  var downloadLink1 = document.getElementById('download-link1');
-  var downloadLink2 = document.getElementById('download-link2');
-  var os = "ubuntu"
-  if (navigator.appVersion.indexOf("Win") != -1) os = "windows";
-  if (navigator.appVersion.indexOf("Mac") != -1) os = "macos";
-  if (navigator.appVersion.indexOf("X11") != -1) os = "ubuntu";
-  if (navigator.appVersion.indexOf("Linux") != -1) os = "ubuntu";
-  var url = `https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/v0.3.1-alpha/openandroidinstaller-v0.3.1-alpha-${os}-latest.zip`
-  downloadLink1.setAttribute('href', url);
-  downloadLink2.setAttribute('href', url);
-</script>
 <!-- Track button clicks-->
 <script>
   document.getElementById('download-link1').addEventListener("click", function () { plausible('download-header'); });
