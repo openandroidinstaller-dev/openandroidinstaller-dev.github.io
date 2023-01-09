@@ -113,7 +113,12 @@
         <div class="column is-two-thirds is-offset-2">
           <article class="message is-warning">
             <div class="message-header">
-              <p>Warning</p>
+              <div class="icon-text">
+                <span class="icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                <span>Warning</span>
+              </div>
             </div>
             <div class="message-body">
               Support for these devices is provided as best effort, but things might still go wrong.
@@ -121,8 +126,12 @@
             </div>
           </article>
           <details>
-            <summary><b>Samsung</b></summary>
-            <div class="table-container">
+            <summary class="box is-clickable">
+              <span class="icon">
+                <i class="fas fa-arrow-right"></i>
+              </span><b>Samsung</b>
+            </summary>
+            <div class="table-container mb-5">
               <table class="table is-striped is-hoverable is-fullwidth">
                 <thead>
                   <tr>
@@ -209,8 +218,10 @@
             </div>
           </details>
           <details>
-            <summary><b>Google</b></summary>
-            <div class="table-container">
+            <summary class="box is-clickable"><span class="icon">
+                <i class="fas fa-arrow-right"></i>
+              </span><b>Google</b></summary>
+            <div class="table-container mb-5">
               <table class="table is-striped is-hoverable is-fullwidth">
                 <thead>
                   <tr>
@@ -304,8 +315,10 @@
             </div>
           </details>
           <details>
-            <summary><b>Sony</b></summary>
-            <div class="table-container">
+            <summary class="box is-clickable"><span class="icon">
+                <i class="fas fa-arrow-right"></i>
+              </span><b>Sony</b></summary>
+            <div class="table-container mb-5">
               <table class="table is-striped is-hoverable is-fullwidth">
                 <thead>
                   <tr>
@@ -378,8 +391,10 @@
             </div>
           </details>
           <details>
-            <summary><b>Fairphone</b></summary>
-            <div class="table-container">
+            <summary class="box is-clickable"><span class="icon">
+                <i class="fas fa-arrow-right"></i>
+              </span><b>Fairphone</b></summary>
+            <div class="table-container mb-5">
               <table class="table is-striped is-hoverable is-fullwidth">
                 <thead>
                   <tr>
@@ -417,8 +432,10 @@
             </div>
           </details>
           <details>
-            <summary><b>Motorola</b></summary>
-            <div class="table-container">
+            <summary class="box is-clickable"><span class="icon">
+                <i class="fas fa-arrow-right"></i>
+              </span><b>Motorola</b></summary>
+            <div class="table-container mb-5">
               <table class="table is-striped is-hoverable is-fullwidth">
                 <thead>
                   <tr>
@@ -449,8 +466,10 @@
             </div>
           </details>
           <details>
-            <summary><b>OnePlus</b></summary>
-            <div class="table-container">
+            <summary class="box is-clickable"><span class="icon">
+                <i class="fas fa-arrow-right"></i>
+              </span><b>OnePlus</b></summary>
+            <div class="table-container mb-5">
               <table class="table is-striped is-hoverable is-fullwidth">
                 <thead>
                   <tr>
@@ -607,7 +626,8 @@
     <!-- Footer End -->
   </div>
 </body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  crossorigin="anonymous" />
 <!-- Track button clicks-->
 <script>
   document.getElementById('download-link1').addEventListener("click", function () { plausible('download-header'); });
