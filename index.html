@@ -99,7 +99,8 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller</h1>
-          <h2 class="subtitle">The graphical installer that makes installing alternative Android distributions nice and easy.<h2>
+          <h2 class="subtitle">The graphical installer that makes installing alternative Android distributions nice and
+            easy.<h2>
               <div class="buttons is-centered">
                 <a class="control button is-link" id="download-link1" href="#">
                   <span class="icon is-small">
@@ -130,7 +131,9 @@
                 </svg></span>
               <div class="ml-3">
                 <h4 class="is-size-4 has-text-weight-bold mb-2">Works out-of-the-box</h4>
-                <p class="subtitle has-text-grey">Comes packaged with all tools like adb, fastboot and heimdall.</p>
+                <p class="subtitle has-text-grey">Comes packaged with all <a
+                    href="https://github.com/openandroidinstaller-dev/openandroidinstaller#tools" target="_blank">tools
+                    like adb, fastboot and heimdall.</a></p>
               </div>
             </div>
             <div class="mb-6 is-flex">
@@ -143,7 +146,8 @@
                 </svg></span>
               <div class="ml-3">
                 <h4 class="is-size-4 has-text-weight-bold mb-2">Bring your own ROM</h4>
-                <p class="subtitle has-text-grey">Supports all kinds of different android ROMs with TWRP recovery.</p>
+                <p class="subtitle has-text-grey">Supports all kinds of <a href="#what-to-install">different Android
+                    ROMs</a> with TWRP recovery.</p>
               </div>
             </div>
           </div>
@@ -251,7 +255,7 @@
     <!-- Getting started-->
     <section class="section" id="getting-started">
       <div class="container">
-        <div class="is-vcentered columns is-multiline">
+        <div class="columns is-multiline">
           <div class="column is-6 is-5-desktop mb-4">
             <h2 class="mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Getting started</h2>
             <div class="content">
@@ -266,7 +270,7 @@
                   target="_blank">booted from a USB drive without installing it</a>.
                 This might be a simple solution if you face any compatibility issues.
               </p>
-              <p><b>How to run the application:</b></p>
+              <h4>How to run the application:</h4>
               <ul>
                 <li>Download the AppImage, .exe or appropriate executable file for your OS. You might need to change
                   permissions to run the executable. (On Windows, also <a href="https://adb.clockworkmod.com/">install
@@ -274,6 +278,25 @@
                   potentially drivers needed for your device.)</li>
                 <li>Start the desktop app and follow the instructions. You might need to allow or enable the execution
                   of the software.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="column is-5 ml-auto">
+            <h2 class="mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold" id="what-to-install">What to install?
+            </h2>
+            <div class="content">
+              <p>
+                You can use the OpenAndroidInstaller to install all kinds of custom Android ROMs.
+              </p>
+              <h4>A selection of different Android-based ROMs and where to find them:</h4>
+              <ul>
+                <li><a href="https://wiki.lineageos.org/devices/">LineageOS</a></li>
+                <li><a href="https://doc.e.foundation/devices">/e/OS</a></li>
+                <li><a href="https://download.lineage.microg.org/">LineageOS for microg</a></li>
+                <li><a href="https://blissroms.org/">BlissRoms</a></li>
+                <li><a href="https://download.pixelexperience.org/">PixelExperience with build-in GApps</a></li>
+                <li>or you can just search the web or the <a href="https://forum.xda-developers.com">xda-developers
+                    forum</a> for an appropriate version for your device.</li>
               </ul>
             </div>
           </div>
@@ -356,7 +379,8 @@
     <!-- Footer End -->
   </div>
 </body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  crossorigin="anonymous" />
 <!-- Script to determine the users OS and deliver the correct download link.-->
 <script>
   var downloadLink1 = document.getElementById('download-link1');
