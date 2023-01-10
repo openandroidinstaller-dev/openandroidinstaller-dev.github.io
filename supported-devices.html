@@ -635,5 +635,22 @@
   document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
   document.getElementById('getting-started-button').addEventListener("click", function () { plausible('getting-started'); });
 </script>
+<!--Automatically close all the other <details> tags after opening a specific <details> tag-->
+<script>
+  // Fetch all the details element.
+const details = document.querySelectorAll("details");
+
+// Add the onclick listeners.
+details.forEach((targetDetail) => {
+  targetDetail.addEventListener("click", () => {
+    // Close all the details that are not targetDetail.
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
+});
+</script>
 
 </html>
