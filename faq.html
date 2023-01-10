@@ -8,27 +8,27 @@
   <meta name="author" content="Tobias Sterbak">
   <meta name="description" content="Makes installing alternative Android distributions like LineageOS nice and easy.">
   <meta name="referrer" content="unsafe-url">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="googlebot" content="noindex,nofollow">
-  <meta property="og:title" content="OpenAndroidInstaller | Feedback">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Frequently Asked Questions | OpenAndroidInstaller">
   <meta property="og:description"
-    content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
+    content="Makes installing alternative Android distributions like LineageOS nice and easy. Frequently Asked Questions">
   <meta property="og:image" content="static/preview-header.png">
   <meta property="og:image:width" content="700" />
   <meta property="og:image:height" content="280" />
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenAndroidInstaller | Feedback">
+  <meta name="twitter:title" content="Frequently Asked Questions | OpenAndroidInstaller">
   <meta name="twitter:creator" content="@oainstaller">
   <meta name="twitter:description"
-    content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
+    content="Makes installing alternative Android distributions like LineageOS nice and easy. Frequently Asked Questions">
   <meta name="twitter:image" content="static/preview-header.png">
-  <title>Feedback | OpenAndroidInstaller</title>
+  <title>Frequently Asked Questions | OpenAndroidInstaller</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />-->
   <link rel="stylesheet" href="static/style.css" />
   <link rel="icon" href="static/favicon.ico">
-  <script defer data-domain="openandroidinstaller.org" data-api="https://morning-mud-8440.openandroidinstaller.workers.dev/main/event"
+  <script defer data-domain="openandroidinstaller.org"
+    data-api="https://morning-mud-8440.openandroidinstaller.workers.dev/main/event"
     src="https://morning-mud-8440.openandroidinstaller.workers.dev/main/script.outbound-links.file-downloads.js"></script>
   <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
   <script>
@@ -51,6 +51,7 @@
 
         });
       });
+
     });
   </script>
 </head>
@@ -98,89 +99,92 @@
 
     <!-- Main -->
     <!-- Header -->
-    <section class="hero">
+    <section class="hero is-small">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller | Feedback</h1>
-          <h2 class="subtitle">Give feedback to the project and how it worked for you. At this point, all kind of
-            feedback helps. Thank you!</h2>
+          <h1 class="is-size-1 is-size-3-mobile has-text-weight-bold">Frequently Asked Questions</h1>
         </div>
       </div>
     </section>
     <!-- Header End -->
 
-    <!-- Features -->
+    <!-- FAQ -->
     <section class="section">
-      <div class="container">
-        <div class="column is-half is-offset-one-quarter">
-          <form method="post" action="https://airform.io/feedback@openandroidinstaller.org">
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" name="name" type="text" placeholder="Your Name">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" name="email" type="email" placeholder="Your Email if you want an answer"
-                    value="">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Feedback</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Write your feedback here." name="message"></textarea>
-                </div>
-              </div>
-
-              <div class="field">
-                <p>Your feedback is processed in encrypted form by <a href="https://airform.io/"
-                    target="_blank">airform.io</a> and if you provide an email address you might get an answer.</p>
-              </div>
-
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-link">Submit</button>
-                </div>
-              </div>
-          </form>
+      <div class="container is-max-desktop">
+        <!-- TOC -->
+        <div class="box px-6">
+          <h2 class="subtitle is-2">Table of contents</h2>
+          <dl>
+            <li><a href="#what-android-roms-are-supported">What Android ROMs are supported?</a></li>
+            <li><a href="#my-device-is-not-supported">My devices is not supported. What can I do?</a></li>
+            <li><a href="#can-i-use-gapps">How can I use Google Apps for my devices?</a></li>
+          </dl>
         </div>
+        <!-- TOC end -->
+        <!-- Content -->
+        <div class="notification has-background-white-bis">
+          <h3 id="what-android-roms-are-supported" class="title is-3">What Android ROMs are supported?</h3>
+          <div class="content">
+            <p>
+              Most of the devices are tested with LineageOS (official and some unofficial releases) as well as LineageOS
+              for microg or PixelExperience when available.
+              But you can use the OpenAndroidInstaller to install all kinds of custom Android ROMs.
+            </p>
+            <h4>A selection of different Android-based ROMs and where to find them:</h4>
+            <ul>
+              <li><a href="https://wiki.lineageos.org/devices/">LineageOS</a></li>
+              <li><a href="https://doc.e.foundation/devices">/e/OS</a></li>
+              <li><a href="https://download.lineage.microg.org/">LineageOS for microg</a></li>
+              <li><a href="https://blissroms.org/">BlissRoms</a></li>
+              <li><a href="https://download.pixelexperience.org/">PixelExperience with build-in GApps</a></li>
+              <li>or you can just search the web or the <a href="https://forum.xda-developers.com">xda-developers
+                  forum</a> for an appropriate version for your device.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="notification has-background-white-bis">
+          <h3 id="my-device-is-not-supported" class="title is-3">My device is not supported. What can I do?</h3>
+          <div class="content">
+            <p>
+              If your device is currently not supported, you have basically two options.
+            </p>
+            <h4>Contribute support for your device:</h4>
+            <p>If you have some experience with flashing Android ROMs, you can find more details on how to contribute
+              here: <a class="is-link"
+                href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing">How to
+                contribute?</a></p>
+            <h4>Ask for support:</h4>
+            <p>You can also open a github issue and ask for support for your device. There might be reasons, that your device is not supported and likely will not get support.</p>
+          </div>
+        </div>
+        <div class="notification has-background-white-bis">
+          <h3 id="can-i-use-gapps" class="title is-3">How can I use Google Apps for my device?</h3>
+          <p>While we don't like google apps, some people feel that they need them to leverage the full experience of
+            their Android devices.
+            We believe people should be free to do what they want with their devices. This is why we are working on
+            supporting you to install them as well.
+          </p>
+          <br>
+          <p>This is not supported yet, so for now we recommend using ROMs with build-in Google Apps like
+            PixelExperience.</p>
+        </div>
+        <!-- Content end -->
       </div>
     </section>
-    <!-- Features End -->
+    <!-- FAQ -->
 
     <!-- Contribution Banner -->
     <section class="section has-background-primary">
       <div class="container">
         <div class="is-vcentered columns is-multiline">
           <div class="column is-6 is-5-desktop mb-4">
-            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">All kinds of
-              contributions are welcome!</h2>
-            <div class="content has-text-white">
-              <ul>
-                <li>Fix and improve texts in configs and in the application.</li>
-                <li>Test the tool for a supported device.</li>
-                <li>Create a config for a new device.</li>
-                <li>Test the application on your computer.</li>
-                <li>Contribute an application build for a new platform.</li>
-              </ul>
-            </div>
+            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Still having questions?
+            </h2>
           </div>
           <div class="column is-5 ml-auto">
             <div class="mx-auto box p-6 has-background-light has-text-centered">
               <a class="button is-link is-fullwidth" id="contribute-button"
-                href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing">How to
-                contribute?</a>
+                href="mailto: help@openandroidinstaller.org">Write a mail</a>
             </div>
           </div>
         </div>
@@ -233,13 +237,31 @@
     <!-- Footer End -->
   </div>
 </body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  crossorigin="anonymous" />
 <!-- Track button clicks-->
 <script>
   document.getElementById('download-link1').addEventListener("click", function () { plausible('download-header'); });
   document.getElementById('download-link2').addEventListener("click", function () { plausible('download-banner'); });
   document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
   document.getElementById('getting-started-button').addEventListener("click", function () { plausible('getting-started'); });
+</script>
+<!--Automatically close all the other <details> tags after opening a specific <details> tag-->
+<script>
+  // Fetch all the details element.
+  const details = document.querySelectorAll("details");
+
+  // Add the onclick listeners.
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      // Close all the details that are not targetDetail.
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
 </script>
 
 </html>
