@@ -29,7 +29,8 @@
   <link rel="stylesheet" href="static/custom.css" />
   <link rel="icon" href="static/favicon.ico">
   <meta name="msvalidate.01" content="BADB1605403452D1F9CB0E93E71BCEA6" />
-  <script defer data-domain="openandroidinstaller.org" data-api="https://morning-mud-8440.openandroidinstaller.workers.dev/main/event"
+  <script defer data-domain="openandroidinstaller.org"
+    data-api="https://morning-mud-8440.openandroidinstaller.workers.dev/main/event"
     src="https://morning-mud-8440.openandroidinstaller.workers.dev/main/script.outbound-links.file-downloads.js"></script>
   <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
   <script>
@@ -105,7 +106,7 @@
         <div class="container has-text-centered">
           <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">Officially supported Devices |
             OpenAndroidInstaller</h1>
-          <h2 class="subtitle">Currently, <strong>we support 41 devices</strong> by various vendors and working on
+          <h2 class="subtitle">Currently, <strong>we support 45 devices</strong> by various vendors and working on
             adding more soon!</h2>
         </div>
       </div>
@@ -466,6 +467,34 @@
                     <td></td>
                     <td><span class="tag is-success">tested</span></td>
                   </tr>
+                  <tr>
+                    <td>Motorola</td>
+                    <td>moto g6 plus</td>
+                    <td><a href="https://wiki.lineageos.org/devices/evert/">evert</a></td>
+                    <td></td>
+                    <td><span class="tag is-success">tested</span></td>
+                  </tr>
+                  <tr>
+                    <td>Motorola</td>
+                    <td>moto g 5G plus / one 5G</td>
+                    <td><a href="https://wiki.lineageos.org/devices/nairo/">nairo</a></td>
+                    <td></td>
+                    <td><span class="tag is-success">tested</span></td>
+                  </tr>
+                  <tr>
+                    <td>Motorola</td>
+                    <td>moto g 5G / one 5G ace</td>
+                    <td><a href="https://wiki.lineageos.org/devices/kiev/">kiev</a></td>
+                    <td></td>
+                    <td><span class="tag is-success">tested</span></td>
+                  </tr>
+                  <tr>
+                    <td>Motorola</td>
+                    <td>edge</td>
+                    <td><a href="https://wiki.lineageos.org/devices/racer/">racer</a></td>
+                    <td></td>
+                    <td><span class="tag is-success">tested</span></td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -591,8 +620,17 @@
       <div class="container">
         <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
           <div class="mr-auto mb-2">
-            <a class="is-inline-block" href="https://openandroidinstaller.org/"><img class="image"
-                src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo" width="48px"></a>
+            <div class="is-inline-block">
+              <a href="https://openandroidinstaller.org/">
+                <img class="image is-96x96"
+                  src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo">
+              </a>
+            </div>
+            <div class="is-inline-block" style="width: 333px;">
+              <figure class="image">
+                <img src="static/pf_funding_logos.svg" alt="BMBF logo">
+              </figure>
+            </div>
           </div>
           <div>
             <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
@@ -640,19 +678,19 @@
 <!--Automatically close all the other <details> tags after opening a specific <details> tag-->
 <script>
   // Fetch all the details element.
-const details = document.querySelectorAll("details");
+  const details = document.querySelectorAll("details");
 
-// Add the onclick listeners.
-details.forEach((targetDetail) => {
-  targetDetail.addEventListener("click", () => {
-    // Close all the details that are not targetDetail.
-    details.forEach((detail) => {
-      if (detail !== targetDetail) {
-        detail.removeAttribute("open");
-      }
+  // Add the onclick listeners.
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      // Close all the details that are not targetDetail.
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
     });
   });
-});
 </script>
 
 </html>
