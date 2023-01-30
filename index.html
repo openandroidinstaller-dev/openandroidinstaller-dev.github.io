@@ -158,7 +158,7 @@
             </div>
           </div>
           <div class="column is-6 is-block-desktop">
-            <figure class="image is-16by9">
+            <figure class="image is-16by9" id="demo-video">
               <video class="has-ratio" width="640" height="360" poster="static/openandroidinstaller-demo-preview.png"
                 src="https://user-images.githubusercontent.com/13310865/212983179-04d58c21-7a07-48fa-961c-5413a7f2d850.mp4"
                 controls="controls" style="max-width: 640px;">
@@ -427,6 +427,7 @@
 <script>
   document.getElementById('download-link1').addEventListener("click", function () { plausible('download-header'); });
   document.getElementById('download-link2').addEventListener("click", function () { plausible('download-banner'); });
+  document.getElementById('demo-video').addEventListener("click", function () { plausible('demo-video-started'); });
   document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
   document.getElementById('getting-started-button').addEventListener("click", function () { plausible('getting-started'); });
 </script>
