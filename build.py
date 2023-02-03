@@ -9,20 +9,14 @@ env = Environment(
 
 if __name__ == "__main__":
     # pages to build
-    pages = ["index.html"]
+    pages = ["index.html", "supported-devices.html", "faq.html"]
 
     # Load template files and write the rendered HTML
     for page in pages:
         # render the templates
         template = env.get_template(page)
-        output = template.render()
-
-        # replace the paths of the page
-        if page == "index.html":
-            output = output.replace("index.html", "https://openandroidinstaller.org")
-        else:
-            output = output.replace("index.html", "/")
+        output = template.render(version="v0.3.4-alpha", n_supported_devices=48)
 
         # write to file
-        with open(f"{page}", "w") as html_output:
+        with open(f"public/{page}", "w") as html_output:
             html_output.write(output)

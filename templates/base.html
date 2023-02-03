@@ -4,31 +4,30 @@
 <head>
   <!-- META -->
   <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Tobias Sterbak">
   <meta name="description" content="Makes installing alternative Android distributions like LineageOS nice and easy.">
   <meta name="referrer" content="unsafe-url">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="googlebot" content="noindex,nofollow">
-  <meta property="og:title" content="OpenAndroidInstaller | Feedback">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="{{ self.title() }}">
   <meta property="og:description"
     content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
   <meta property="og:image" content="static/preview-header.png">
   <meta property="og:image:width" content="700">
   <meta property="og:image:height" content="280">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenAndroidInstaller | Feedback">
+  <meta name="twitter:title" content="{{ self.title() }}">
   <meta name="twitter:creator" content="@oainstaller">
   <meta name="twitter:description"
     content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
   <meta name="twitter:image" content="static/preview-header.png">
-  <title>Feedback | OpenAndroidInstaller</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />-->
   <link rel="stylesheet" href="static/style.css">
   <link rel="stylesheet" href="static/custom.css">
   <link rel="icon" href="static/favicon.ico">
-  <script defer data-domain="openandroidinstaller.org" data-api="https://morning-mud-8440.openandroidinstaller.workers.dev/main/event"
+  <meta name="msvalidate.01" content="BADB1605403452D1F9CB0E93E71BCEA6">
+  <script defer data-domain="openandroidinstaller.org"
+    data-api="https://morning-mud-8440.openandroidinstaller.workers.dev/main/event"
     src="https://morning-mud-8440.openandroidinstaller.workers.dev/main/script.outbound-links.file-downloads.js"></script>
   <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
   <script>
@@ -51,6 +50,7 @@
 
         });
       });
+
     });
   </script>
 </head>
@@ -63,7 +63,7 @@
     <nav class="navbar py-4">
       <div class="container is-fluid">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://openandroidinstaller.org/">
+          <a class="navbar-item" href="https://openandroidinstaller.org">
             <img class="image" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo" width="30" height="30">
           </a>
           <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
@@ -74,7 +74,7 @@
         </div>
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-end">
-            <a class="navbar-item" href="https://openandroidinstaller.org/#getting-started">
+            <a class="navbar-item" href="https://openandroidinstaller.org#getting-started">
               <span class="icon"><i class="fa fa-play"></i></span><span>Getting started</span>
             </a>
             <a class="navbar-item" href="https://openandroidinstaller.org/supported-devices.html">
@@ -97,96 +97,9 @@
     <!-- NAV END -->
 
     <!-- Main -->
-    <!-- Header -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller | Feedback</h1>
-          <h2 class="subtitle">Give feedback to the project and how it worked for you. At this point, all kind of
-            feedback helps. Thank you!</h2>
-        </div>
-      </div>
-    </section>
-    <!-- Header End -->
-
-    <!-- Features -->
-    <section class="section">
-      <div class="container">
-        <div class="column is-half is-offset-one-quarter">
-          <form method="post" action="https://airform.io/feedback@openandroidinstaller.org">
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" name="name" type="text" placeholder="Your Name">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" name="email" type="email" placeholder="Your Email if you want an answer"
-                    value="">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Feedback</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Write your feedback here." name="message"></textarea>
-                </div>
-              </div>
-
-              <div class="field">
-                <p>Your feedback is processed in encrypted form by <a href="https://airform.io/"
-                    target="_blank">airform.io</a> and if you provide an email address you might get an answer.</p>
-              </div>
-
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-link">Submit</button>
-                </div>
-              </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- Features End -->
-
-    <!-- Contribution Banner -->
-    <section class="section has-background-primary">
-      <div class="container">
-        <div class="is-vcentered columns is-multiline">
-          <div class="column is-6 is-5-desktop mb-4">
-            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">All kinds of
-              contributions are welcome!</h2>
-            <div class="content has-text-white">
-              <ul>
-                <li>Fix and improve texts in configs and in the application.</li>
-                <li>Test the tool for a supported device.</li>
-                <li>Create a config for a new device.</li>
-                <li>Test the application on your computer.</li>
-                <li>Contribute an application build for a new platform.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="column is-5 ml-auto">
-            <div class="mx-auto box p-6 has-background-light has-text-centered">
-              <a class="button is-link is-fullwidth" id="contribute-button"
-                href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing" target="_blank">How to
-                contribute?</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contribution Banner End -->
+    {% block content %}
+    {% endblock %}
+    <!-- Main END -->
 
     <!-- Footer -->
     <footer class="section">
@@ -194,9 +107,8 @@
         <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
           <div class="mr-auto mb-2">
             <div class="is-inline-block">
-              <a href="https://openandroidinstaller.org/">
-                <img class="image is-96x96"
-                  src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo">
+              <a href="https://openandroidinstaller.org">
+                <img class="image is-96x96" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo">
               </a>
             </div>
             <div class="is-inline-block" style="width: 333px;">
@@ -242,10 +154,45 @@
     <!-- Footer End -->
   </div>
 </body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  crossorigin="anonymous">
+<!-- Script to determine the users OS and deliver the correct download link.-->
+<script>
+  var downloadLink1 = document.getElementById('download-link1');
+  var downloadLink2 = document.getElementById('download-link2');
+  var os = "ubuntu"
+  if (navigator.appVersion.indexOf("Win") != -1) os = "windows";
+  if (navigator.appVersion.indexOf("Mac") != -1) os = "macos";
+  if (navigator.appVersion.indexOf("X11") != -1) os = "ubuntu";
+  if (navigator.appVersion.indexOf("Linux") != -1) os = "ubuntu";
+  var url = `https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/{{ version }}/openandroidinstaller-{{ version }}-${os}-latest.zip`
+  downloadLink1.setAttribute('href', url);
+  downloadLink2.setAttribute('href', url);
+</script>
 <!-- Track button clicks-->
 <script>
+  document.getElementById('download-link1').addEventListener("click", function () { plausible('download-header'); });
+  document.getElementById('download-link2').addEventListener("click", function () { plausible('download-banner'); });
+  document.getElementById('demo-video').addEventListener("click", function () { plausible('demo-video-started'); });
   document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
+  document.getElementById('getting-started-button').addEventListener("click", function () { plausible('getting-started'); });
+</script>
+<!--Automatically close all the other <details> tags after opening a specific <details> tag-->
+<script>
+  // Fetch all the details element.
+  const details = document.querySelectorAll("details");
+
+  // Add the onclick listeners.
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      // Close all the details that are not targetDetail.
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
 </script>
 
 </html>
