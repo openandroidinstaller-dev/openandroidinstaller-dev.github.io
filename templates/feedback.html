@@ -1,250 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <!-- META -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Tobias Sterbak">
-  <meta name="description" content="Makes installing alternative Android distributions like LineageOS nice and easy.">
-  <meta name="referrer" content="unsafe-url">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="googlebot" content="noindex,nofollow">
-  <meta property="og:title" content="OpenAndroidInstaller | Feedback">
-  <meta property="og:description"
-    content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
-  <meta property="og:image" content="static/preview-header.png">
-  <meta property="og:image:width" content="700">
-  <meta property="og:image:height" content="280">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenAndroidInstaller | Feedback">
-  <meta name="twitter:creator" content="@oainstaller">
-  <meta name="twitter:description"
-    content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
-  <meta name="twitter:image" content="static/preview-header.png">
-  <title>Feedback | OpenAndroidInstaller</title>
-  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />-->
-  <link rel="stylesheet" href="static/style.css">
-  <link rel="stylesheet" href="static/custom.css">
-  <link rel="icon" href="static/favicon.ico">
-  <script defer data-domain="openandroidinstaller.org" data-api="https://morning-mud-8440.openandroidinstaller.workers.dev/main/event"
-    src="https://morning-mud-8440.openandroidinstaller.workers.dev/main/script.outbound-links.file-downloads.js"></script>
-  <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-      // Add a click event on each of them
-      $navbarBurgers.forEach(el => {
-        el.addEventListener('click', () => {
-
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-
-        });
-      });
-    });
-  </script>
-</head>
-
-<body>
-  <div>
-    <div class="columns is-multiline">
+{% extends "base.html" %}
+{% block title %}Feedback | OpenAndroidInstaller{% endblock %}
+{% block robot %}
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+{% endblock %}
+{% block content %}
+<!-- Main -->
+<!-- Header -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller | Feedback</h1>
+      <h2 class="subtitle">Give feedback to the project and how it worked for you. At this point, all kind of
+        feedback helps. Thank you!</h2>
     </div>
-    <!-- NAV -->
-    <nav class="navbar py-4">
-      <div class="container is-fluid">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://openandroidinstaller.org/">
-            <img class="image" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo" width="30" height="30">
-          </a>
-          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="https://openandroidinstaller.org/#getting-started">
-              <span class="icon"><i class="fa fa-play"></i></span><span>Getting started</span>
-            </a>
-            <a class="navbar-item" href="https://openandroidinstaller.org/supported-devices.html">
-              <span class="icon"><i class="fa fa-mobile"></i></span><span>Supported Devices</span>
-            </a>
-            <a class="navbar-item" href="https://openandroidinstaller.org/faq.html">
-              <span class="icon"><i class="fa fa-question"></i></span><span>FAQ</span>
-            </a>
-            <a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
-              target="_blank">
-              <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
-            </a>
-            <a class="navbar-item" href="mailto:hello@openandroidinstaller.org">
-              <span class="icon"><i class="fa fa-envelope"></i></span><span>Get Help</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- NAV END -->
-
-    <!-- Main -->
-    <!-- Header -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">OpenAndroidInstaller | Feedback</h1>
-          <h2 class="subtitle">Give feedback to the project and how it worked for you. At this point, all kind of
-            feedback helps. Thank you!</h2>
-        </div>
-      </div>
-    </section>
-    <!-- Header End -->
-
-    <!-- Features -->
-    <section class="section">
-      <div class="container">
-        <div class="column is-half is-offset-one-quarter">
-          <form method="post" action="https://airform.io/feedback@openandroidinstaller.org">
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" name="name" type="text" placeholder="Your Name">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" name="email" type="email" placeholder="Your Email if you want an answer"
-                    value="">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Feedback</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Write your feedback here." name="message"></textarea>
-                </div>
-              </div>
-
-              <div class="field">
-                <p>Your feedback is processed in encrypted form by <a href="https://airform.io/"
-                    target="_blank">airform.io</a> and if you provide an email address you might get an answer.</p>
-              </div>
-
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-link">Submit</button>
-                </div>
-              </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- Features End -->
-
-    <!-- Contribution Banner -->
-    <section class="section has-background-primary">
-      <div class="container">
-        <div class="is-vcentered columns is-multiline">
-          <div class="column is-6 is-5-desktop mb-4">
-            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">All kinds of
-              contributions are welcome!</h2>
-            <div class="content has-text-white">
-              <ul>
-                <li>Fix and improve texts in configs and in the application.</li>
-                <li>Test the tool for a supported device.</li>
-                <li>Create a config for a new device.</li>
-                <li>Test the application on your computer.</li>
-                <li>Contribute an application build for a new platform.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="column is-5 ml-auto">
-            <div class="mx-auto box p-6 has-background-light has-text-centered">
-              <a class="button is-link is-fullwidth" id="contribute-button"
-                href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing" target="_blank">How to
-                contribute?</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contribution Banner End -->
-
-    <!-- Footer -->
-    <footer class="section">
-      <div class="container">
-        <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
-          <div class="mr-auto mb-2">
-            <div class="is-inline-block">
-              <a href="https://openandroidinstaller.org/">
-                <img class="image is-96x96"
-                  src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo">
-              </a>
-            </div>
-            <div class="is-inline-block" style="width: 333px;">
-              <figure class="image">
-                <img src="static/pf_funding_logos.svg" alt="BMBF logo">
-              </figure>
-            </div>
-          </div>
-          <div>
-            <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
-              <li class="mr-4"><a class="button is-white"
-                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller#acknowledgements"
-                  target="_blank">Funding</a></li>
-              <li class="mr-4"><a class="button is-white"
-                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller/blob/main/LICENSE"
-                  target="_blank">License</a></li>
-              <li class="mr-4"><a class="button is-white" href="#">Imprint</a></li>
-              <li class="mr-4"><a class="button is-white" href="#">Privacy Statement</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
-      <div class="container">
-        <div class="is-flex-tablet is-justify-content-between is-align-items-center">
-          <p>All rights reserved © OpenAndroidInstaller 2022-2023</p>
-          <div class="py-2 is-hidden-tablet"></div>
-          <div class="ml-auto">
-            <a class="mr-4 is-inline-block" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
-              target="_blank">
-              <span class="icon"><i class="fab fa-github"></i></span><span>Github</span>
-            </a>
-            <a class="mr-4 is-inline-block" href="https://twitter.com/OAInstaller" target="_blank">
-              <span class="icon"><i class="fab fa-twitter"></i></span><span>Twitter</span>
-            </a>
-            <a rel="me" class="mr-4 is-inline-block" href="https://fosstodon.org/@openandroidinstaller" target="_blank">
-              <span class="icon"><i class="fab fa-mastodon"></i></span><span>Mastodon</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer End -->
   </div>
-</body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
-<!-- Track button clicks-->
-<script>
-  document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
-</script>
+</section>
+<!-- Header End -->
 
-</html>
+<!-- Features -->
+<section class="section">
+  <div class="container">
+    <div class="column is-half is-offset-one-quarter">
+      <form method="post" action="https://airform.io/feedback@openandroidinstaller.org">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" name="name" type="text" placeholder="Your Name">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" name="email" type="email" placeholder="Your Email if you want an answer" value="">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Feedback</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Write your feedback here." name="message"></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <p>Your feedback is processed in encrypted form by <a href="https://airform.io/"
+                target="_blank">airform.io</a> and if you provide an email address you might get an answer.</p>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link">Submit</button>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Features End -->
+
+<!-- Contribution Banner -->
+<section class="section has-background-primary">
+  <div class="container">
+    <div class="is-vcentered columns is-multiline">
+      <div class="column is-6 is-5-desktop mb-4">
+        <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">All kinds of
+          contributions are welcome!</h2>
+        <div class="content has-text-white">
+          <ul>
+            <li>Fix and improve texts in configs and in the application.</li>
+            <li>Test the tool for a supported device.</li>
+            <li>Create a config for a new device.</li>
+            <li>Test the application on your computer.</li>
+            <li>Contribute an application build for a new platform.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column is-5 ml-auto">
+        <div class="mx-auto box p-6 has-background-light has-text-centered">
+          <a class="button is-link is-fullwidth" id="contribute-button"
+            href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing" target="_blank">How to
+            contribute?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contribution Banner End -->
+{% endblock %}
