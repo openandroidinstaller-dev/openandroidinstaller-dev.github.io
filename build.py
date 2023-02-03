@@ -24,5 +24,5 @@ if __name__ == "__main__":
             output = output.replace("index.html", "/")
 
         # write to file
-        with open(f"public/{page}", "w") as html_output:
+        with open(f"{page}", "w") as html_output:
             html_output.write(output)
