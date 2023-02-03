@@ -9,7 +9,7 @@ env = Environment(
 
 if __name__ == "__main__":
     # pages to build
-    pages = ["index.html", "supported-devices.html", "faq.html", "imprint.html"]
+    pages = ["index.html", "supported-devices.html", "faq.html", "imprint.html", "privacy.html"]
 
     # Load template files and write the rendered HTML
     for page in pages:
