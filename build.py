@@ -15,7 +15,7 @@ if __name__ == "__main__":
     for page in pages:
         # render the templates
         template = env.get_template(page)
-        output = template.render(version="v0.3.4-alpha", n_supported_devices=48)
+        output = template.render(version="v0.3.5-alpha", n_supported_devices=52)
 
         # write to file
         with open(f"public/{page}", "w") as html_output:
