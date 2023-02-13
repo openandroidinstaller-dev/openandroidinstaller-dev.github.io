@@ -9,13 +9,19 @@ env = Environment(
 
 if __name__ == "__main__":
     # pages to build
-    pages = ["index.html", "supported-devices.html", "faq.html", "imprint.html", "privacy.html"]
+    pages = [
+        "index.html", "supported-devices.html", "faq.html",
+        "imprint.html", "privacy.html", "download.html"
+    ]
 
     # Load template files and write the rendered HTML
     for page in pages:
         # render the templates
         template = env.get_template(page)
-        output = template.render(version="v0.3.5-alpha", n_supported_devices=52)
+        output = template.render(
+            version="v0.3.5-alpha",
+            n_supported_devices=52,
+        )
 
         # write to file
         with open(f"public/{page}", "w") as html_output:

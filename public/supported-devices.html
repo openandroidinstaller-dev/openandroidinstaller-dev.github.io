@@ -80,6 +80,9 @@
             <a class="navbar-item" href="https://openandroidinstaller.org/supported-devices.html">
               <span class="icon"><i class="fa fa-mobile"></i></span><span>Supported Devices</span>
             </a>
+            <a class="navbar-item" href="https://openandroidinstaller.org/download.html">
+              <span class="icon"><i class="fa fa-download"></i></span><span>Download</span>
+            </a>
             <a class="navbar-item" href="https://openandroidinstaller.org/faq.html">
               <span class="icon"><i class="fa fa-question"></i></span><span>FAQ</span>
             </a>
@@ -103,8 +106,7 @@
 <section class="hero">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">Officially supported devices |
-        OpenAndroidInstaller</h1>
+      <h1 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">Officially supported devices</h1>
       <h2 class="subtitle">Currently, <strong>we support 52 devices</strong> by various vendors and working on
         adding more soon!</h2>
     </div>
@@ -721,23 +723,10 @@
 </body>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
   crossorigin="anonymous">
-<!-- Script to determine the users OS and deliver the correct download link.-->
-<script>
-  var downloadLink1 = document.getElementById('download-link1');
-  var downloadLink2 = document.getElementById('download-link2');
-  var os = "ubuntu"
-  if (navigator.appVersion.indexOf("Win") != -1) os = "windows";
-  if (navigator.appVersion.indexOf("Mac") != -1) os = "macos";
-  if (navigator.appVersion.indexOf("X11") != -1) os = "ubuntu";
-  if (navigator.appVersion.indexOf("Linux") != -1) os = "ubuntu";
-  var url = `https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/v0.3.5-alpha/openandroidinstaller-v0.3.5-alpha-${os}-latest.zip`
-  downloadLink1.setAttribute('href', url);
-  downloadLink2.setAttribute('href', url);
-</script>
 <!-- Track button clicks-->
 <script>
-  document.getElementById('download-link1').addEventListener("click", function () { plausible('download-header'); });
-  document.getElementById('download-link2').addEventListener("click", function () { plausible('download-banner'); });
+  document.getElementById('download-header').addEventListener("click", function () { plausible('download-header'); });
+  document.getElementById('download-banner').addEventListener("click", function () { plausible('download-banner'); });
   document.getElementById('demo-video').addEventListener("click", function () { plausible('demo-video-started'); });
   document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
   document.getElementById('getting-started-button').addEventListener("click", function () { plausible('getting-started'); });

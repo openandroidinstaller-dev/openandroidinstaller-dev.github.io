@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}Download | OpenAndroidInstaller{% endblock %}
+{% block robot %}
+<meta name="robots" content="index, follow">{% endblock %}
+{% block content %}
+<!-- Header -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="is-size-1 is-size-3-mobile has-text-weight-bold">Downloads</h1>
+      <h2 class="subtitle">The OpenAndroidInstaller is available for download for different platforms:</h2>
+    </div>
+  </div>
+</section>
+<!-- Header End -->
+
+<!-- Download -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="tile is-ancestor">
+      <div class="tile is-6 is-vertical is-parent">
+        <a class="tile is-child box is-clickable" target="_blank"
+          href="https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/{{ version }}/openandroidinstaller-{{ version }}-ubuntu-latest.zip">
+          <div class="icon-text title">
+            <span class="icon is-medium">
+              <i class="fab fa-ubuntu" aria-hidden="true"></i>
+            </span>
+            <span>Ubuntu 22.04.</span>
+          </div>
+          <p>Click to download the zipped executable. You may need to give it execution permissions.</p>
+        </a>
+        <a class="tile is-child box is-clickable" target="_blank"
+          href="https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/{{ version }}/openandroidinstaller-{{ version }}-ubuntu-20.04.zip">
+          <div class="icon-text title">
+            <span class="icon is-medium">
+              <i class="fab fa-ubuntu" aria-hidden="true"></i>
+            </span>
+            <span>Ubuntu 20.04.</span>
+          </div>
+          <p>Click to download the zipped executable. You may need to give it execution permissions.</p>
+        </a>
+        <a class="tile is-child box is-clickable" target="_blank"
+          href="#">
+          <div class="icon-text title">
+            <span class="icon is-medium">
+              <i class="fab fa-linux" aria-hidden="true"></i>
+            </span>
+            <span>Flathub</span>
+          </div>
+          <p>Coming soon!</p>
+        </a>
+      </div>
+      <div class="tile is-vertical is-parent">
+        <a class="tile is-child box" target="_blank"
+          href="https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/{{ version }}/openandroidinstaller-{{ version }}-windows-latest.zip">
+          <div class="icon-text title">
+            <span class="icon is-medium">
+              <i class="fab fa-windows" aria-hidden="true"></i>
+            </span>
+            <span>Windows</span>
+          </div>
+          <p>Click to download the zipped exe.</p>
+        </a>
+        <a class="tile is-child box is-clickable" target="_blank"
+          href="https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/{{ version }}/openandroidinstaller-{{ version }}-macos-latest.zip">
+          <div class="icon-text title">
+            <span class="icon is-medium">
+              <i class="fab fa-apple" aria-hidden="true"></i>
+            </span>
+            <span>MacOS (x86)</span>
+          </div>
+          <p>Click to download the zipped executable. You may need to give it execution permissions.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Download End -->
+
+<!-- Contribution Banner -->
+<section class="section has-background-primary">
+  <div class="container">
+    <div class="is-vcentered columns is-multiline">
+      <div class="column is-6 is-5-desktop mb-4">
+        <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Still having questions?
+        </h2>
+      </div>
+      <div class="column is-5 ml-auto">
+        <div class="mx-auto box p-6 has-background-light has-text-centered">
+          <a class="button is-link is-fullwidth" id="contribute-button"
+            href="mailto:help@openandroidinstaller.org">Write a mail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contribution Banner End -->
+{% endblock %}
