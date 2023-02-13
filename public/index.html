@@ -9,7 +9,8 @@
   <meta name="author" content="Tobias Sterbak">
   <meta name="description" content="Makes installing alternative Android distributions like LineageOS nice and easy.">
   <meta name="referrer" content="unsafe-url">
-  <meta name="robots" content="index, follow">
+  
+<meta name="robots" content="index, follow">
   <meta property="og:title" content="OpenAndroidInstaller">
   <meta property="og:description"
     content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
@@ -57,8 +58,6 @@
 
 <body>
   <div>
-    <div class="columns is-multiline">
-    </div>
     <!-- NAV -->
     <nav class="navbar py-4">
       <div class="container is-fluid">
@@ -82,6 +81,9 @@
             </a>
             <a class="navbar-item" href="https://openandroidinstaller.org/download.html">
               <span class="icon"><i class="fa fa-download"></i></span><span>Download</span>
+            </a>
+            <a class="navbar-item" href="https://openandroidinstaller.org/contribute.html">
+              <span class="icon"><i class="fa fa-heart"></i></span><span>Contribute</span>
             </a>
             <a class="navbar-item" href="https://openandroidinstaller.org/faq.html">
               <span class="icon"><i class="fa fa-question"></i></span><span>FAQ</span>
@@ -194,7 +196,8 @@
           <div class="ml-3">
             <h4 class="is-size-4 has-text-weight-bold mb-2">Supports many devices</h4>
             <p class="subtitle has-text-grey">Built-in <a
-                href="https://openandroidinstaller.org/supported-devices.html">support for 52 devices</a> and an
+                href="https://openandroidinstaller.org/supported-devices.html">support for 52
+                devices</a> and an
               easy extension system.</p>
           </div>
         </div>
@@ -224,7 +227,8 @@
         <div class="mx-auto box p-6 has-background-light has-text-centered">
           <h4 class="is-size-5 mb-2 has-text-weight-bold">Free your Android device with a custom ROM!</h4>
           <p class="has-text-grey-dark mb-4">Works on Windows, MacOS and Linux.</p>
-          <a class="button is-link is-fullwidth" href="https://openandroidinstaller.org/download.html" id="download-banner">
+          <a class="button is-link is-fullwidth" href="https://openandroidinstaller.org/download.html"
+            id="download-banner">
             <span class="icon is-small">
               <i class="fas fa-download"></i>
             </span>
@@ -312,9 +316,7 @@
       <div class="column is-5 ml-auto">
         <div class="mx-auto box p-6 has-background-light has-text-centered">
           <a class="button is-link is-fullwidth" id="contribute-button"
-            href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing" target="_blank">How
-            to
-            contribute?</a>
+            href="https://openandroidinstaller.org/contribute.html">How to contribute?</a>
         </div>
       </div>
     </div>
@@ -403,6 +405,28 @@
       });
     });
   });
+</script>
+<!--Script for vertical tabs-->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var tabs = document.querySelectorAll('.tabs ul li');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener('click', function() {
+      var target = this.getAttribute('data-target');
+      var activeTab = this.parentNode.querySelector('.is-active');
+      if (activeTab) {
+        activeTab.classList.remove('is-active');
+      }
+      this.classList.add('is-active');
+      var activeContent = document.querySelector('.tab-content.is-active');
+      if (activeContent) {
+        activeContent.classList.remove('is-active');
+      }
+      var content = document.getElementById(target);
+      content.classList.add('is-active');
+    });
+  }
+});
 </script>
 
 </html>

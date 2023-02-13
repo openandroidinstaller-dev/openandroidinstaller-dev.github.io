@@ -60,8 +60,6 @@
 
 <body>
   <div>
-    <div class="columns is-multiline">
-    </div>
     <!-- NAV -->
     <nav class="navbar py-4">
       <div class="container is-fluid">
@@ -85,6 +83,9 @@
             </a>
             <a class="navbar-item" href="https://openandroidinstaller.org/download.html">
               <span class="icon"><i class="fa fa-download"></i></span><span>Download</span>
+            </a>
+            <a class="navbar-item" href="https://openandroidinstaller.org/contribute.html">
+              <span class="icon"><i class="fa fa-heart"></i></span><span>Contribute</span>
             </a>
             <a class="navbar-item" href="https://openandroidinstaller.org/faq.html">
               <span class="icon"><i class="fa fa-question"></i></span><span>FAQ</span>
@@ -263,6 +264,28 @@ Gottschedstraße 4
       });
     });
   });
+</script>
+<!--Script for vertical tabs-->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var tabs = document.querySelectorAll('.tabs ul li');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener('click', function() {
+      var target = this.getAttribute('data-target');
+      var activeTab = this.parentNode.querySelector('.is-active');
+      if (activeTab) {
+        activeTab.classList.remove('is-active');
+      }
+      this.classList.add('is-active');
+      var activeContent = document.querySelector('.tab-content.is-active');
+      if (activeContent) {
+        activeContent.classList.remove('is-active');
+      }
+      var content = document.getElementById(target);
+      content.classList.add('is-active');
+    });
+  }
+});
 </script>
 
 </html>

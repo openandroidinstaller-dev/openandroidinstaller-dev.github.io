@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}Contribute | OpenAndroidInstaller{% endblock %}
+{% block robot %}
+<meta name="robots" content="index, follow">{% endblock %}
+{% block content %}
+<!-- Header -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="is-size-1 is-size-3-mobile has-text-weight-bold">Contribute</h1>
+      <h2 class="subtitle">Help us make the OpenAndroidInstaller even better! There are several ways to contribute.</h2>
+    </div>
+  </div>
+</section>
+<!-- Header End -->
+
+<!-- Download -->
+<section class="section">
+  <div class="columns">
+    <div class="column is-8 is-offset-2">
+      <div class="box">
+        <div class="tabs is-fullwidth is-large is-toggle">
+          <ul>
+            <li data-target="users" class="is-active">
+              <a>
+                <span class="icon is-small"><i class="fas fa-users" aria-hidden="true"></i></span>
+                <span>Users</span>
+              </a>
+            </li>
+            <li data-target="developers">
+              <a>
+                <span class="icon is-small"><i class="fas fa-code" aria-hidden="true"></i></span>
+                <span>Developers</span>
+              </a>
+            </li>
+            <li data-target="testers">
+              <a>
+                <span class="icon is-small"><i class="fas fa-user-ninja" aria-hidden="true"></i></span>
+                <span>Testers</span>
+              </a>
+            </li>
+            <li data-target="donation">
+              <a>
+                <span class="icon is-small"><i class="fas fa-donate" aria-hidden="true"></i></span>
+                <span>Donation</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="content-wrap">
+          <div id="users" class="tab-content is-active">
+            <p class="title">Report a bug</p>
+            <p>Use the OpenAndroidInstaller issue tracker to report bugs or request new features.</p>
+            <p>Use the website issue tracker to report bugs or request new features.</p>
+          </div>
+          <div id="developers" class="tab-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quodsi ipsam honestatem undique pertectam
+              atque absolutam. Summae mihi videtur inscitiae. Traditur, inquit, ab Epicuro ratio neglegendi doloris.
+              Age, inquies, ista parva sunt.</p>
+          </div>
+          <div id="testers" class="tab-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quodsi ipsam honestatem undique pertectam
+              atque absolutam. Summae mihi videtur inscitiae. Traditur, inquit, ab Epicuro ratio neglegendi doloris.
+              Age, inquies, ista parva sunt. Duo
+              Reges: constructio interrete.</p>
+          </div>
+          <div id="donation" class="tab-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quodsi ipsam honestatem undique pertectam
+              atque absolutam. Summae mihi videtur inscitiae. Traditur, inquit, ab Epicuro ratio neglegendi doloris.
+              Age, inquies, ista parva sunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Download End -->
+
+<!-- Contribution Banner -->
+<section class="section has-background-primary">
+  <div class="container">
+    <div class="is-vcentered columns is-multiline">
+      <div class="column is-6 is-5-desktop mb-4">
+        <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Still having questions?
+        </h2>
+      </div>
+      <div class="column is-5 ml-auto">
+        <div class="mx-auto box p-6 has-background-light has-text-centered">
+          <a class="button is-link is-fullwidth" id="contribute-button"
+            href="mailto:help@openandroidinstaller.org">Write a mail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contribution Banner End -->
+{% endblock %}

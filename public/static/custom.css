@@ -1,3 +1,42 @@
 html {
   scroll-behavior: smooth;
 }
+
+.content-wrap .tab-content {
+  padding-top: 12px;
+  display: none;
+  animation: fadeInLeft 0.5s;
+}
+.content-wrap .tab-content.is-active {
+  display: block;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.fadeInLeft {
+  opacity: 0;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}

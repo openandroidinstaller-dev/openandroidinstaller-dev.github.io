@@ -10,8 +10,13 @@ env = Environment(
 if __name__ == "__main__":
     # pages to build
     pages = [
-        "index.html", "supported-devices.html", "faq.html",
-        "imprint.html", "privacy.html", "download.html"
+        "index.html",
+        "supported-devices.html",
+        "faq.html",
+        "download.html",
+        "contribute.html",
+        "imprint.html",
+        "privacy.html",
     ]
 
     # Load template files and write the rendered HTML
