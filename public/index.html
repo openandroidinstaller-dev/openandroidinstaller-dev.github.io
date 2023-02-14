@@ -297,7 +297,7 @@
 <!-- Getting started End -->
 
 <!-- Contribution Banner -->
-<section class="section has-background-primary" id="contirbute">
+<section class="section has-background-primary" id="contribute">
   <div class="container">
     <div class="is-vcentered columns is-multiline">
       <div class="column is-6 is-5-desktop mb-4">
@@ -327,7 +327,7 @@
                   How to contribute as
                 </p>
                 <ul class="menu-list">
-                  <li><a class="tablinks is-active" onclick="openCity(event, 'user')">
+                  <li><a class="tablinks is-active" onclick="openTab(event, 'user')">
                       <span class="icon-text">
                         <span class="icon">
                           <i class="fas fa-users"></i>
@@ -335,7 +335,7 @@
                         <span>User</span>
                       </span>
                     </a></li>
-                  <li><a class="tablinks" onclick="openCity(event, 'developer')">
+                  <li><a class="tablinks" onclick="openTab(event, 'developer')">
                       <span class="icon-text">
                         <span class="icon">
                           <i class="fas fa-user-ninja"></i>
@@ -343,7 +343,7 @@
                         <span>Developer</span>
                       </span>
                     </a></li>
-                  <li><a class="tablinks" onclick="openCity(event, 'tester')">
+                  <li><a class="tablinks" onclick="openTab(event, 'tester')">
                       <span class="icon-text">
                         <span class="icon">
                           <i class="fas fa-mobile-alt"></i>
@@ -351,7 +351,7 @@
                         <span>Tester</span>
                       </span>
                     </a></li>
-                  <li><a class="tablinks" onclick="openCity(event, 'sponsor')">
+                  <li><a class="tablinks" onclick="openTab(event, 'sponsor')">
                       <span class="icon-text">
                         <span class="icon">
                           <i class="fas fa-donate"></i>
@@ -529,7 +529,7 @@
 </script>
 <!--Script for vertical tabs-->
 <script>
-  function openCity(evt, cityName) {
+  function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -546,7 +546,7 @@
     }
 
     // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " is-active";
   } 
 </script>
