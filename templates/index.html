@@ -197,12 +197,17 @@
 <!-- Getting started End -->
 
 <!-- Contribution Banner -->
-<section class="section has-background-primary">
+<section class="section has-background-primary" id="contirbute">
   <div class="container">
     <div class="is-vcentered columns is-multiline">
       <div class="column is-6 is-5-desktop mb-4">
-        <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">All kinds of
-          contributions are welcome!</h2>
+        <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Contribute to the project!
+        </h2>
+        <p class="has-text-white">OpenAndroidInstaller is open source software, meaning that anyone can inspect, modify,
+          enhance it, and share
+          it. But it's not just for programmers! We invite anyone to come and participate in the creation of
+          OpenAndroidInstaller. Regardless of your skillset, we're sure there is something you can add to our community
+          and the project.</p>
         <div class="content has-text-white">
           <ul>
             <li>Fix and improve texts in configs and in the application.</li>
@@ -213,14 +218,95 @@
           </ul>
         </div>
       </div>
-      <div class="column is-5 ml-auto">
-        <div class="mx-auto box p-6 has-background-light has-text-centered">
-          <a class="button is-link is-fullwidth" id="contribute-button"
-            href="https://openandroidinstaller.org/contribute.html">How to contribute?</a>
+      <div class="column ml-auto">
+        <div class="container box">
+          <div class="columns">
+            <div class="column is-one-third">
+              <div class="menu p-4">
+                <p class="menu-label">
+                  How to contribute as
+                </p>
+                <ul class="menu-list">
+                  <li><a class="tablinks is-active" onclick="openCity(event, 'user')">
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-users"></i>
+                        </span>
+                        <span>User</span>
+                      </span>
+                    </a></li>
+                  <li><a class="tablinks" onclick="openCity(event, 'developer')">
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-user-ninja"></i>
+                        </span>
+                        <span>Developer</span>
+                      </span>
+                    </a></li>
+                  <li><a class="tablinks" onclick="openCity(event, 'tester')">
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-mobile-alt"></i>
+                        </span>
+                        <span>Tester</span>
+                      </span>
+                    </a></li>
+                  <li><a class="tablinks" onclick="openCity(event, 'sponsor')">
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-donate"></i>
+                        </span>
+                        <span>Sponsor</span>
+                      </span>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="column is-two-thirds">
+              <div id="user" class="tabcontent content p-4" style="display:block;">
+                <h3 class="is-title-3">
+                  <span class="icon-text">
+                    <span class="icon">
+                      <i class="fas fa-users"></i>
+                    </span>
+                    <span>User</span>
+                  </span>
+                </h3>
+                <p>Use the OpenAndroidInstaller and report a bug</p>
+                <ul>
+                  <li>Use the K-9 issue tracker to report bugs or request new features.</li>
+                  <li>Use the website issue tracker to report bugs or request new features.</li>
+                </ul>
+              </div>
+              <div id="developer" class="tabcontent content p-4">
+                <h3 class="is-title-3">Developer</h3>
+                <p>Use the OpenAndroidInstaller and report a bug</p>
+                <ul>
+                  <li>Use the K-9 issue tracker to report bugs or request new features.</li>
+                  <li>Use the website issue tracker to report bugs or request new features.</li>
+                </ul>
+              </div>
+              <div id="tester" class="tabcontent content p-4">
+                <h3 class="is-title-3">Tester</h3>
+                <p>Use the OpenAndroidInstaller and report a bug</p>
+                <ul>
+                  <li>Use the K-9 issue tracker to report bugs or request new features.</li>
+                  <li>Use the website issue tracker to report bugs or request new features.</li>
+                </ul>
+              </div>
+              <div id="sponsor" class="tabcontent content p-4">
+                <h3 class="is-title-3">Sponsor</h3>
+                <p>Use the OpenAndroidInstaller and report a bug</p>
+                <ul>
+                  <li>Use the K-9 issue tracker to report bugs or request new features.</li>
+                  <li>Use the website issue tracker to report bugs or request new features.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
 <!-- Contribution Banner End -->
 {% endblock %}

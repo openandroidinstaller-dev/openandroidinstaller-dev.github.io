@@ -82,7 +82,7 @@
             <a class="navbar-item" href="https://openandroidinstaller.org/download.html">
               <span class="icon"><i class="fa fa-download"></i></span><span>Download</span>
             </a>
-            <a class="navbar-item" href="https://openandroidinstaller.org/contribute.html">
+            <a class="navbar-item" href="https://openandroidinstaller.org/#contribute">
               <span class="icon"><i class="fa fa-heart"></i></span><span>Contribute</span>
             </a>
             <a class="navbar-item" href="https://openandroidinstaller.org/faq.html">
@@ -297,12 +297,17 @@
 <!-- Getting started End -->
 
 <!-- Contribution Banner -->
-<section class="section has-background-primary">
+<section class="section has-background-primary" id="contirbute">
   <div class="container">
     <div class="is-vcentered columns is-multiline">
       <div class="column is-6 is-5-desktop mb-4">
-        <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">All kinds of
-          contributions are welcome!</h2>
+        <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Contribute to the project!
+        </h2>
+        <p class="has-text-white">OpenAndroidInstaller is open source software, meaning that anyone can inspect, modify,
+          enhance it, and share
+          it. But it's not just for programmers! We invite anyone to come and participate in the creation of
+          OpenAndroidInstaller. Regardless of your skillset, we're sure there is something you can add to our community
+          and the project.</p>
         <div class="content has-text-white">
           <ul>
             <li>Fix and improve texts in configs and in the application.</li>
@@ -313,14 +318,95 @@
           </ul>
         </div>
       </div>
-      <div class="column is-5 ml-auto">
-        <div class="mx-auto box p-6 has-background-light has-text-centered">
-          <a class="button is-link is-fullwidth" id="contribute-button"
-            href="https://openandroidinstaller.org/contribute.html">How to contribute?</a>
+      <div class="column ml-auto">
+        <div class="container box">
+          <div class="columns">
+            <div class="column is-one-third">
+              <div class="menu p-4">
+                <p class="menu-label">
+                  How to contribute as
+                </p>
+                <ul class="menu-list">
+                  <li><a class="tablinks is-active" onclick="openCity(event, 'user')">
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-users"></i>
+                        </span>
+                        <span>User</span>
+                      </span>
+                    </a></li>
+                  <li><a class="tablinks" onclick="openCity(event, 'developer')">
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-user-ninja"></i>
+                        </span>
+                        <span>Developer</span>
+                      </span>
+                    </a></li>
+                  <li><a class="tablinks" onclick="openCity(event, 'tester')">
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-mobile-alt"></i>
+                        </span>
+                        <span>Tester</span>
+                      </span>
+                    </a></li>
+                  <li><a class="tablinks" onclick="openCity(event, 'sponsor')">
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-donate"></i>
+                        </span>
+                        <span>Sponsor</span>
+                      </span>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="column is-two-thirds">
+              <div id="user" class="tabcontent content p-4" style="display:block;">
+                <h3 class="is-title-3">
+                  <span class="icon-text">
+                    <span class="icon">
+                      <i class="fas fa-users"></i>
+                    </span>
+                    <span>User</span>
+                  </span>
+                </h3>
+                <p>Use the OpenAndroidInstaller and report a bug</p>
+                <ul>
+                  <li>Use the K-9 issue tracker to report bugs or request new features.</li>
+                  <li>Use the website issue tracker to report bugs or request new features.</li>
+                </ul>
+              </div>
+              <div id="developer" class="tabcontent content p-4">
+                <h3 class="is-title-3">Developer</h3>
+                <p>Use the OpenAndroidInstaller and report a bug</p>
+                <ul>
+                  <li>Use the K-9 issue tracker to report bugs or request new features.</li>
+                  <li>Use the website issue tracker to report bugs or request new features.</li>
+                </ul>
+              </div>
+              <div id="tester" class="tabcontent content p-4">
+                <h3 class="is-title-3">Tester</h3>
+                <p>Use the OpenAndroidInstaller and report a bug</p>
+                <ul>
+                  <li>Use the K-9 issue tracker to report bugs or request new features.</li>
+                  <li>Use the website issue tracker to report bugs or request new features.</li>
+                </ul>
+              </div>
+              <div id="sponsor" class="tabcontent content p-4">
+                <h3 class="is-title-3">Sponsor</h3>
+                <p>Use the OpenAndroidInstaller and report a bug</p>
+                <ul>
+                  <li>Use the K-9 issue tracker to report bugs or request new features.</li>
+                  <li>Use the website issue tracker to report bugs or request new features.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
 <!-- Contribution Banner End -->
 
@@ -350,8 +436,10 @@
               <li class="mr-4"><a class="button is-white"
                   href="https://github.com/openandroidinstaller-dev/openandroidinstaller/blob/main/LICENSE"
                   target="_blank">License</a></li>
-              <li class="mr-4"><a class="button is-white" href="https://openandroidinstaller.org/imprint.html">Impressum</a></li>
-              <li class="mr-4"><a class="button is-white" href="https://openandroidinstaller.org/privacy.html">Privacy Statement</a></li>
+              <li class="mr-4"><a class="button is-white"
+                  href="https://openandroidinstaller.org/imprint.html">Impressum</a></li>
+              <li class="mr-4"><a class="button is-white" href="https://openandroidinstaller.org/privacy.html">Privacy
+                  Statement</a></li>
             </ul>
           </div>
         </div>
@@ -359,7 +447,8 @@
       <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
       <div class="container">
         <div class="is-flex-tablet is-justify-content-between is-align-items-center">
-            <p>made with &#x1F49A;, python and <a href="https://bulma.io/" target="_blank">bulma</a> by Tobias Sterbak. All rights reserved © OpenAndroidInstaller 2022-2023</p>
+          <p>made with &#x1F49A;, python and <a href="https://bulma.io/" target="_blank">bulma</a> by Tobias Sterbak.
+            All rights reserved © OpenAndroidInstaller 2022-2023</p>
           <div class="py-2 is-hidden-tablet"></div>
           <div class="ml-auto">
             <a class="mr-4 is-inline-block" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
@@ -408,25 +497,26 @@
 </script>
 <!--Script for vertical tabs-->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  var tabs = document.querySelectorAll('.tabs ul li');
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener('click', function() {
-      var target = this.getAttribute('data-target');
-      var activeTab = this.parentNode.querySelector('.is-active');
-      if (activeTab) {
-        activeTab.classList.remove('is-active');
-      }
-      this.classList.add('is-active');
-      var activeContent = document.querySelector('.tab-content.is-active');
-      if (activeContent) {
-        activeContent.classList.remove('is-active');
-      }
-      var content = document.getElementById(target);
-      content.classList.add('is-active');
-    });
-  }
-});
+  function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " is-active";
+  } 
 </script>
 
 </html>

@@ -14,7 +14,6 @@ if __name__ == "__main__":
         "supported-devices.html",
         "faq.html",
         "download.html",
-        "contribute.html",
         "imprint.html",
         "privacy.html",
     ]
