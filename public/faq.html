@@ -9,7 +9,8 @@
   <meta name="author" content="Tobias Sterbak">
   <meta name="description" content="Makes installing alternative Android distributions like LineageOS nice and easy.">
   <meta name="referrer" content="unsafe-url">
-  <meta name="robots" content="index, follow">
+  
+<meta name="robots" content="index, follow">
   <meta property="og:title" content="Frequently Asked Questions | OpenAndroidInstaller">
   <meta property="og:description"
     content="Makes installing alternative Android distributions like LineageOS nice and easy. Download now!">
@@ -122,11 +123,14 @@
         <li><a href="#my-device-is-not-supported">My devices is not supported. What can I do?</a></li>
         <li><a href="#which-addons">What are addons and which ones are supported?</a></li>
         <li><a href="#can-i-use-gapps">How can I use Google Apps for my devices?</a></li>
+        <li><a href="#is-it-virus">Virus scanners show the tool as a virus or trojan. What is going on?</a></li>
+        <li><a href="#fastboot-hangs">When flashing the custom recovery, the applications hangs and the advanced output
+            shows "waiting-for-device". What can I do?</a></li>
       </dl>
     </div>
     <!-- TOC end -->
     <!-- Content -->
-    <div class="notification has-background-white-bis p-6">
+    <div class="notification has-background-white-bis p-6 content">
       <h3 id="what-android-roms-are-supported" class="title is-3">What Android ROMs are supported?</h3>
       <div class="content">
         <p>
@@ -148,7 +152,7 @@
         </ul>
       </div>
     </div>
-    <div class="notification has-background-white-bis p-6">
+    <div class="notification has-background-white-bis p-6 content">
       <h3 id="my-device-is-not-supported" class="title is-3">My device is not supported. What can I do?</h3>
       <div class="content">
         <p>
@@ -165,29 +169,60 @@
           device is not supported and likely will not get support.</p>
       </div>
     </div>
-    <div class="notification has-background-white-bis p-6">
+    <div class="notification has-background-white-bis p-6 content">
       <h3 id="which-addons" class="title is-3">What are addons and which ones are supported?</h3>
-      <p>Addons are optional, additional apps and services that are useful to have. Most notable Google Apps and Services as well as MicroG to replace them or the F-Droid FOSS App-Store.</p>
+      <p>Addons are optional, additional apps and services that are useful to have. Most notable Google Apps and
+        Services as well as MicroG to replace them or the F-Droid FOSS App-Store.</p>
       <br>
       <p>There are different packages of *Google Apps* available.</p>
       <ul>
         <li><a href="https://wiki.lineageos.org/gapps#downloads" target="_blank">MindTheGapps</a></li>
         <li><a href="https://nikgapps.com/" target="_blank">NikGApps</a></li>
       </ul>
-      <br>
       <p>You can find out more about MicroG here: <a href="https://microg.org/" target="_blank">MicroG</a>.
-      The recommended way to install MicroG is to use the zip file provided here: <a href="https://github.com/FriendlyNeighborhoodShane/MinMicroG_releases/releases" target="_blank">FriendlyNeighborhoodShane/MinMicroG_releases</a>.
-      The best way to get an installable zip for F-Droid can be found here: <a href="https://f-droid.org/en/packages/org.fdroid.fdroid.privileged.ota/" target="_blank">F-Droid App-Store</a>.
+        The recommended way to install MicroG is to use the zip file provided here: <a
+          href="https://github.com/FriendlyNeighborhoodShane/MinMicroG_releases/releases"
+          target="_blank">FriendlyNeighborhoodShane/MinMicroG_releases</a>.
+        The best way to get an installable zip for F-Droid can be found here: <a
+          href="https://f-droid.org/en/packages/org.fdroid.fdroid.privileged.ota/" target="_blank">F-Droid
+          App-Store</a>.
       </p>
     </div>
-    <div class="notification has-background-white-bis p-6">
+    <div class="notification has-background-white-bis p-6 content">
       <h3 id="can-i-use-gapps" class="title is-3">How can I use Google Apps for my device?</h3>
       <p>While we don't like google apps, some people feel that they need them to leverage the full experience of
         their Android devices.
-        We believe people should be free to do what they want with their devices. So installing them is supported as well.
+        We believe people should be free to do what they want with their devices. So installing them is supported as
+        well.
       </p>
-      <br>
       <p>It is still recommended to use ROMs with build-in Google Apps like PixelExperience.</p>
+    </div>
+    <div class="notification has-background-white-bis p-6 content">
+      <h3 id="is-it-virus" class="title is-3">Virus scanners show the tool as a virus or trojan. What is going on?
+      </h3>
+      <p>In some virus scanners the OpenAndroidInstaller shows up as a virus or trojan. This is a false positive. We
+        explain the issue here.
+        The code and build process of the distributed files is completely open source and can be found on github. So
+        people can verify that it's not malicious software.
+      </p>
+      <p>The Installer is bundled and compiled python code made into an executable file. This is done with <a href="https://pyinstaller.org/" target="_blank">pyinstaller</a>.
+        As it turns out, false positive issues are known and people encounter them regularly.</p>
+      <ul>
+        <li><a
+            href="https://stackoverflow.com/questions/43777106/program-made-with-pyinstaller-now-seen-as-a-trojan-horse-by-avg"
+            target="_blank">https://stackoverflow.com/questions/43777106/program-made-with-pyinstaller-now-seen-as-a-trojan-horse-by-avg</a>
+        </li>
+        <li><a href="https://github.com/pyinstaller/pyinstaller/blob/develop/.github/ISSUE_TEMPLATE/antivirus.md"
+            target="_blank">https://github.com/pyinstaller/pyinstaller/blob/develop/.github/ISSUE_TEMPLATE/antivirus.md</a>
+        </li>
+      </ul>
+      <p>As far as we know, there is no real solution to this issue.</p>
+    </div>
+    <div class="notification has-background-white-bis p-6 content">
+      <h3 id="fastboot-hangs" class="title is-3">When flashing the custom recovery, the applications hangs and the
+        advanced output shows "waiting-for-device". What can I do?</h3>
+      <p> It seems like sometimes fastboot (the tool used for flashing the recovery) doesn't work properly. A possible
+        solution weirdly can be to try a different USB-cable and/or different USB-Ports.</p>
     </div>
     <!-- Content end -->
   </div>
