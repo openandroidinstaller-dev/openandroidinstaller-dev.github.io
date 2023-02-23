@@ -123,6 +123,7 @@
         <li><a href="#my-device-is-not-supported">My devices is not supported. What can I do?</a></li>
         <li><a href="#which-addons">What are addons and which ones are supported?</a></li>
         <li><a href="#can-i-use-gapps">How can I use Google Apps for my devices?</a></li>
+        <li><a href="#unlock-bootloader">Will this tool unlock my bootloader?</a></li>
         <li><a href="#is-it-virus">Virus scanners show the tool as a virus or trojan. What is going on?</a></li>
         <li><a href="#fastboot-hangs">When flashing the custom recovery, the applications hangs and the advanced output
             shows "waiting-for-device". What can I do?</a></li>
@@ -198,6 +199,24 @@
       <p>It is still recommended to use ROMs with built-in Google Apps like PixelExperience.</p>
     </div>
     <div class="notification has-background-white-bis p-6 content">
+      <h3 id="unlock-bootloader" class="title is-3">Will this tool unlock my bootloader?</h3>
+      <p>First of all, this tool will not help you bypass any vender locked bootloaders in non-official ways.</p>
+      <p>
+        Devices by Samsung, Google and Fairphone make it fairly easy to unlock the bootloader and receive good support
+        in the installer.
+      </p>
+      <p>
+        Some devices with require manual steps to unlock the bootloader. In general you will need to create an account
+        at a vendor website and receive some code from there. OpenAndroidInstaller will try to guide you as far as
+        possible. These vendors include Sony, Motorola, Xiaomi and OnePlus among others.
+      </p>
+      <p>
+        Other phone vendors stops allowing to unlock the bootloader all together. There is nothing to be done if you
+        didn't unlock your device in time. These vendors include Huawei and LG among others. Support for these vendors
+        will always be very limited.
+      </p>
+    </div>
+    <div class="notification has-background-white-bis p-6 content">
       <h3 id="is-it-virus" class="title is-3">Virus scanners show the tool as a virus or trojan. What is going on?
       </h3>
       <p>In some virus scanners the OpenAndroidInstaller shows up as a virus or trojan. This is a false positive. We
@@ -205,7 +224,8 @@
         The code and build process of the distributed files is completely open source and can be found on github. So
         people can verify that it's not malicious software.
       </p>
-      <p>The Installer is bundled and compiled python code made into an executable file. This is done with <a href="https://pyinstaller.org/" target="_blank">pyinstaller</a>.
+      <p>The Installer is bundled and compiled python code made into an executable file. This is done with <a
+          href="https://pyinstaller.org/" target="_blank">pyinstaller</a>.
         As it turns out, false positive issues are known and people encounter them regularly.</p>
       <ul>
         <li><a
