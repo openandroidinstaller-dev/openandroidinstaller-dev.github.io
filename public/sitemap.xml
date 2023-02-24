@@ -5,19 +5,25 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
 <url>
   <loc>https://openandroidinstaller.org/</loc>
-  <lastmod>2023-01-10T21:07:34+00:00</lastmod>
+  <lastmod>2023-02-23T15:11:19+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://openandroidinstaller.org/supported-devices.html</loc>
-  <lastmod>2023-01-10T21:07:34+00:00</lastmod>
+  <lastmod>2023-02-23T15:11:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openandroidinstaller.org/download.html</loc>
+  <lastmod>2023-02-23T15:11:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://openandroidinstaller.org/faq.html</loc>
-  <lastmod>2023-01-10T21:07:34+00:00</lastmod>
+  <lastmod>2023-02-23T15:11:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
