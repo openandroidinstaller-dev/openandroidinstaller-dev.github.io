@@ -24,8 +24,8 @@ if __name__ == "__main__":
         # render the templates
         template = env.get_template(page)
         output = template.render(
-            version="v0.4.2-beta",
-            n_supported_devices=57,
+            version="v0.4.3-beta",
+            n_supported_devices=60,
         )
 
         # write to file
