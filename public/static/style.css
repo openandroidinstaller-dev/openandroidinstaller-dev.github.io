@@ -242,6 +242,9 @@ h6 {
 ul {
   list-style: none; }
 
+.px-6 ul {
+  list-style: unset; }
+
 button,
 input,
 select,
