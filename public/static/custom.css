@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.px-6 ul {
+  list-style: unset;
+}
+
 /* Style the tab content */
 .tabcontent {
   display: none;
