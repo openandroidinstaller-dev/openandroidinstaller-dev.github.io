@@ -6,6 +6,17 @@ html {
   list-style: unset;
 }
 
+#pf-funding-logos {
+  width: 333px;
+}
+
+.pt-5 {
+  border-top: 1px solid #dee2e6;
+}
+
+#user {
+  display: block;
+}
 /* Style the tab content */
 .tabcontent {
   display: none;
