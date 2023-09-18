@@ -17,6 +17,32 @@ html {
 #user {
   display: block;
 }
+
+#donate-widgets {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.opencollective,
+#gh-sponsors {
+  display: flex !important;
+  margin: auto !important;
+}
+
+.liberapay {
+  display: flex !important;
+  width: 50% !important;
+  margin-bottom: 10px;
+  margin-left: 46.05px !important;
+}
+
+.liberapay-nojs {
+  display: flex;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
 /* Style the tab content */
 .tabcontent {
   display: none;
