@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <!-- META -->
+  <!-- Meta -->
   <meta charset="UTF-8">
   <title>Frequently Asked Questions | OpenAndroidInstaller</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="static/custom.css">
   <link rel="icon" href="static/favicon.ico">
   <meta name="msvalidate.01" content="BADB1605403452D1F9CB0E93E71BCEA6">
+  <!-- Meta End -->
   <script defer data-domain="openandroidinstaller.org"
     src="https://plausible.io/js/script.outbound-links.file-downloads.js"></script>
   <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
@@ -57,48 +58,49 @@
 
 <body>
   <div>
-    <!-- NAV -->
+    <!-- Nav -->
     <nav class="navbar py-4">
       <div class="container is-fluid">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://openandroidinstaller.org">
             <img class="image" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo" width="30" height="30">
           </a>
-          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
+          <a class="navbar-burger round hover-transition" role="button" aria-label="menu" aria-expanded="false"
+            data-target="navMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div class="navbar-menu" id="navMenu">
+        <div class="navbar-menu round" id="navMenu">
           <div class="navbar-end">
-            <a class="navbar-item" href="https://openandroidinstaller.org#getting-started">
+            <a class="navbar-item round hover-transition" href="#getting-started">
               <span class="icon"><i class="fa fa-play"></i></span><span>Getting started</span>
             </a>
-            <a class="navbar-item" href="https://openandroidinstaller.org/supported-devices.html">
+            <a class="navbar-item round hover-transition" href="supported-devices.html">
               <span class="icon"><i class="fa fa-mobile"></i></span><span>Supported Devices</span>
             </a>
-            <a class="navbar-item" href="https://openandroidinstaller.org/download.html">
+            <a class="navbar-item round hover-transition" href="download.html">
               <span class="icon"><i class="fa fa-download"></i></span><span>Download</span>
             </a>
-            <a class="navbar-item" href="https://openandroidinstaller.org/#contribute">
+            <a class="navbar-item round hover-transition" href="#contribute">
               <span class="icon"><i class="fa fa-heart"></i></span><span>Contribute</span>
             </a>
-            <a class="navbar-item" href="https://openandroidinstaller.org/faq.html">
+            <a class="navbar-item round hover-transition" href="faq.html">
               <span class="icon"><i class="fa fa-question"></i></span><span>FAQ</span>
             </a>
-            <a class="navbar-item" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
-              target="_blank">
+            <a class="navbar-item round hover-transition"
+              href="https://github.com/openandroidinstaller-dev/openandroidinstaller" rel="noopener" target="_blank">
               <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
             </a>
-            <a class="navbar-item" href="mailto:hello@openandroidinstaller.org">
+            <a class="navbar-item round hover-transition" href="mailto:hello@openandroidinstaller.org">
               <span class="icon"><i class="fa fa-envelope"></i></span><span>Get Help</span>
             </a>
           </div>
         </div>
       </div>
     </nav>
-    <!-- NAV END -->
+    <!-- Nav End -->
 
     <!-- Main -->
     
@@ -117,7 +119,7 @@
   <div class="container is-max-desktop">
     <!-- TOC -->
     <div class="box px-6">
-      <dl>
+      <ul>
         <li><a href="#what-android-roms-are-supported">Which Android ROMs are supported?</a></li>
         <li><a href="#my-device-is-not-supported">My devices is not supported. What can I do?</a></li>
         <li><a href="#which-addons">What are addons and which ones are supported?</a></li>
@@ -128,9 +130,9 @@
         <li><a href="#fastboot-hangs">When flashing the custom recovery, the applications hangs and the advanced output
             shows "waiting-for-device". What can I do?</a></li>
         <li><a href="#find-logs">Where do I find the logfiles?</a></li>
-      </dl>
+      </ul>
     </div>
-    <!-- TOC end -->
+    <!-- TOC End -->
     <!-- Content -->
     <div class="notification has-background-white-bis p-6 content">
       <h3 id="what-android-roms-are-supported" class="title is-3">What Android ROMs are supported?</h3>
@@ -142,15 +144,16 @@
         </p>
         <h4>A selection of different Android-based ROMs and where to find them:</h4>
         <ul>
-          <li><a href="https://wiki.lineageos.org/devices/" target="_blank">LineageOS</a></li>
-          <li><a href="https://doc.e.foundation/devices" target="_blank">/e/OS</a></li>
-          <li><a href="https://download.lineage.microg.org/" target="_blank">LineageOS for microg</a></li>
-          <li><a href="https://blissroms.org/" target="_blank">BlissRoms</a></li>
-          <li><a href="https://download.pixelexperience.org/" target="_blank">PixelExperience with built-in
+          <li><a href="https://wiki.lineageos.org/devices" rel="noopener" target="_blank">LineageOS</a></li>
+          <li><a href="https://doc.e.foundation/devices" rel="noopener" target="_blank">/e/OS</a></li>
+          <li><a href="https://download.lineage.microg.org" rel="noopener" target="_blank">LineageOS for microG</a>
+          </li>
+          <li><a href="https://blissroms.org" rel="noopener" target="_blank">BlissRoms</a></li>
+          <li><a href="https://download.pixelexperience.org" rel="noopener" target="_blank">PixelExperience with
+              built-in
               GApps</a></li>
-          <li>or you can just search the web or the <a href="https://forum.xda-developers.com"
-              target="_blank">xda-developers
-              forum</a> for an appropriate version for your device.</li>
+          <li>or you can just search the web or the <a href="https://forum.xda-developers.com" rel="noopener"
+              target="_blank">xda-developers forum</a> for an appropriate version for your device.</li>
         </ul>
       </div>
     </div>
@@ -162,10 +165,8 @@
         </p>
         <h4>Contribute support for your device:</h4>
         <p>If you have some experience with flashing Android ROMs, you can find more details on how to contribute
-          here: <a class="is-link" href="https://github.com/openandroidinstaller-dev/openandroidinstaller#contributing"
-            target="_blank">How
-            to
-            contribute?</a></p>
+          here: <a class="is-link" href="index.html/#contribute" rel="noopener"
+            target="_blank">How to contribute?</a></p>
         <h4>Ask for support:</h4>
         <p>You can also open a github issue and ask for support for your device. There might be reasons, that your
           device is not supported and likely will not get support.</p>
@@ -175,24 +176,24 @@
       <h3 id="which-addons" class="title is-3">What are addons and which ones are supported?</h3>
       <p>Addons are optional, additional apps and services that are useful to have. Most notable Google Apps and
         Services as well as MicroG to replace them or the F-Droid FOSS App-Store.</p>
-      <br>
-      <p>There are different packages of *Google Apps* available.</p>
+      <p>There are different packages of <em>Google Apps</em> available.</p>
       <ul>
-        <li><a href="https://wiki.lineageos.org/gapps#downloads" target="_blank">MindTheGapps</a></li>
-        <li><a href="https://nikgapps.com/" target="_blank">NikGApps</a></li>
+        <li><a href="https://wiki.lineageos.org/gapps#downloads" rel="noopener" target="_blank">MindTheGapps</a></li>
+        <li><a href="https://nikgapps.com" rel="noopener" target="_blank">NikGApps</a></li>
       </ul>
-      <p>You can find out more about MicroG here: <a href="https://microg.org/" target="_blank">MicroG</a>.
+      <p>You can find out more about MicroG here: <a href="https://microg.org" rel="noopener"
+          target="_blank">MicroG</a>.
         The recommended way to install MicroG is to use the zip file provided here: <a
-          href="https://github.com/FriendlyNeighborhoodShane/MinMicroG_releases/releases"
-          target="_blank">FriendlyNeighborhoodShane/MinMicroG_releases</a>.
+          href="https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases" rel="noopener"
+          target="_blank">FriendlyNeighborhoodShane/MinMicroG-abuse-CI</a>.
         The best way to get an installable zip for F-Droid can be found here: <a
-          href="https://f-droid.org/en/packages/org.fdroid.fdroid.privileged.ota/" target="_blank">F-Droid
+          href="https://f-droid.org/en/packages/org.fdroid.fdroid.privileged.ota" rel="noopener" target="_blank">F-Droid
           App-Store</a>.
       </p>
     </div>
     <div class="notification has-background-white-bis p-6 content">
       <h3 id="can-i-use-gapps" class="title is-3">How can I use Google Apps for my device?</h3>
-      <p>While we don't like google apps, some people feel that they need them to leverage the full experience of
+      <p>While we don't like Google apps, some people feel that they need them to leverage the full experience of
         their Android devices.
         We believe people should be free to do what they want with their devices. So installing them is supported as
         well.
@@ -221,44 +222,149 @@
         <li>Make sure your device is supported by the image up to the exact device id.
         <li>Try a different image for your device. This is especially useful for unofficial images of ROMs.</li>
       </ul>
-      <p>Of course, there are other things that can go wrong. If non of the above helps, write an email or raise an issue on GitHub.
+      <p>Of course, there are other things that can go wrong. If none of the above helps, write an <a
+          href="mailto:help@openandroidinstaller.org">e-mail</a> or raise an <a
+          href="https://github.com/openandroidinstaller-dev/openandroidinstaller/issues/new/choose" target="_blank"
+          rel="noopener">issue</a> on GitHub.
       </p>
     </div>
     <div class="notification has-background-white-bis p-6 content">
       <h3 id="unlock-bootloader" class="title is-3">Will this tool unlock my bootloader?</h3>
-      <p>First of all, this tool will not help you bypass any vender locked bootloaders in non-official ways.</p>
-      <p>
-        Devices by Samsung, Google and Fairphone make it fairly easy to unlock the bootloader and receive good support
-        in the installer.
+      <p>First of all, this tool will not help you bypass any vendor locked bootloaders in non-official ways.</p>
+      <p>Devices by <em>Samsung, Google, OnePlus, Fairphone</em> and others make it relatively easy to unlock the
+        bootloader and get good support in the installer.</p>
+      <p>For some devices, it is necessary to unlock the bootloader manually. You usually need to create an account on
+        the manufacturer&#39;s website, wait for a certain time and obtain a code from there. OpenAndroidInstaller will
+        try to guide you as far as possible. These vendors include <em>Sony, Motorola and Xiaomi</em> amongst others.
       </p>
+      <p>Other phone manufacturers no longer allow you to unlock the bootloader. Nothing can be done if you have not
+        unlocked your device in time. These manufacturers include <em>Huawei, Honor, LG and ASUS</em>. Support for these
+        manufacturers will always be very limited.</p>
       <p>
-        Some devices with require manual steps to unlock the bootloader. In general you will need to create an account
-        at a vendor website and receive some code from there. OpenAndroidInstaller will try to guide you as far as
-        possible. These vendors include Sony, Motorola, Xiaomi and OnePlus among others.
+        <b>Here is a brief overview of the bootloader policies of some of the most popular brands (may be
+          incomplete/inaccurate):</b>
       </p>
-      <p>
-        Other phone vendors stops allowing to unlock the bootloader all together. There is nothing to be done if you
-        didn't unlock your device in time. These vendors include Huawei and LG among others. Support for these vendors
-        will always be very limited.
+      <table>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Flashing tool</th>
+            <th>Unlocking Method</th>
+            <th>Loss of guarantee*</th>
+            <th>Supported models</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google</td>
+            <td>Fastboot</td>
+            <td>OEM/Flashing unlock</td>
+            <td>No</td>
+            <td>Pixel and Nexus</td>
+          </tr>
+          <tr>
+            <td>Samsung</td>
+            <td>ODIN or Heimdall</td>
+            <td>Download mode</td>
+            <td><strong>Yes</strong></td>
+            <td>Galaxy S and A series<br>(Increasing complexity <strong>on and after S10</strong>)</td>
+          </tr>
+          <tr>
+            <td>OnePlus</td>
+            <td>Fastboot</td>
+            <td>OEM/Flashing unlock</td>
+            <td>No</td>
+            <td>All</td>
+          </tr>
+          <tr>
+            <td>Fairphone</td>
+            <td>Fastboot</td>
+            <td><a href="https://support.fairphone.com/hc/en-us/articles/10492476238865-Manage-the-Bootloader">Code
+                from manufacturer</a><br>(<strong>Already unlocked until FP2</strong>)</td>
+            <td>No</td>
+            <td>All</td>
+          </tr>
+          <tr>
+            <td>Xiaomi</td>
+            <td>Fastboot</td>
+            <td><a href="https://new.c.mi.com/global/post/101245">Mi Unlock Tool</a></td>
+            <td><strong>Yes</strong></td>
+            <td>Mi 4c, Redmi Note 3, Mi Note Pro, Redmi 3, Mi 4S, Mi 5 and all devices from 2016 onwards</td>
+          </tr>
+          <tr>
+            <td>Motorola</td>
+            <td>Fastboot</td>
+            <td><a href="https://en-us.support.motorola.com/app/standalone/bootloader/unlock-your-device-a">Code from
+                manufacturer</a></td>
+            <td><strong>Yes</strong></td>
+            <td>Almost all <strong>except</strong> carrier specific models (e.g. Verizon, AT&amp;T, Tracfone) and
+              certain other models</td>
+          </tr>
+          <tr>
+            <td>Sony</td>
+            <td>Fastboot</td>
+            <td><a
+                href="https://developer.sony.com/open-source/aosp-on-xperia-open-devices/get-started/unlock-bootloader">Code
+                from manufacturer</a></td>
+            <td><strong>Yes</strong></td>
+            <td>All <strong>except</strong> XQ-CT62 (1Ⅳ US) &amp; XQ-CQ62 (5Ⅳ US)</td>
+          </tr>
+          <tr>
+            <td>Huawei</td>
+            <td>Fastboot</td>
+            <td>No official codes since 2017/2018<br>(<strong>Unofficial methods available</strong>)</td>
+            <td><strong>Yes</strong></td>
+            <td>Mate 9/9Pro, P10/P10Plus</td>
+          </tr>
+          <tr>
+            <td>Honor</td>
+            <td>Fastboot</td>
+            <td>No official codes since 2017/2018<br>(<strong>Unofficial methods available</strong>)</td>
+            <td><strong>Yes</strong></td>
+            <td>Honor 8</td>
+          </tr>
+          <tr>
+            <td>LG</td>
+            <td>Fastboot</td>
+            <td>Impossible since December 2021</td>
+            <td><strong>Yes</strong></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ASUS</td>
+            <td>Fastboot</td>
+            <td>Impossible since May 2023 (ASUS unlocking App)</td>
+            <td><strong>Yes</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>*</strong> In the EU you won&#39;t loose your standard 2 years of the warranty when you unlock your
+        bootloader, flash your device or root it. (<a
+          href="https://forum.xda-developers.com/t/info-eu-rooting-and-flashing-dont-void-the-warranty.1998801/">source</a>)
       </p>
+      <p>You can find more information about the brands and their bootloader policies <a
+          href="https://wikilibriste.fr/fr/tutoriels-android/bootloader-unlock">here</a> (in French).</p>
+
     </div>
     <div class="notification has-background-white-bis p-6 content">
       <h3 id="is-it-virus" class="title is-3">Virus scanners show the tool as a virus or trojan. What is going on?
       </h3>
       <p>In some virus scanners the OpenAndroidInstaller shows up as a virus or trojan. This is a false positive. We
-        explain the issue here.
-        The code and build process of the distributed files is completely open source and can be found on github. So
+        explain the issue here: <br>
+        The code and build process of the distributed files is completely open source and can be found on GitHub. So
         people can verify that it's not malicious software.
       </p>
       <p>The Installer is bundled and compiled python code made into an executable file. This is done with <a
-          href="https://pyinstaller.org/" target="_blank">pyinstaller</a>.
+          href="https://pyinstaller.org" rel="noopener" target="_blank">pyinstaller</a>.
         As it turns out, false positive issues are known and people encounter them regularly.</p>
       <ul>
         <li><a
             href="https://stackoverflow.com/questions/43777106/program-made-with-pyinstaller-now-seen-as-a-trojan-horse-by-avg"
+            rel="noopener"
             target="_blank">https://stackoverflow.com/questions/43777106/program-made-with-pyinstaller-now-seen-as-a-trojan-horse-by-avg</a>
         </li>
         <li><a href="https://github.com/pyinstaller/pyinstaller/blob/develop/.github/ISSUE_TEMPLATE/antivirus.md"
+            rel="noopener"
             target="_blank">https://github.com/pyinstaller/pyinstaller/blob/develop/.github/ISSUE_TEMPLATE/antivirus.md</a>
         </li>
       </ul>
@@ -272,13 +378,15 @@
     </div>
     <div class="notification has-background-white-bis p-6 content">
       <h3 id="find-logs" class="title is-3">Where do I find the logfiles?</h3>
-      <p>For the flatpak, the logs are located in <code>~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/openandroidinstaller.log</code>.</p>
+      <p>For the Flatpak, the logs are located in
+        <code>~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/openandroidinstaller.log</code>.
+      </p>
       <p>If you are running the executable directly, the logs are located in the same directory as the executable.</p>
     </div>
-    <!-- Content end -->
+    <!-- Content End -->
   </div>
 </section>
-<!-- FAQ -->
+<!-- FAQ End -->
 
 <!-- Contribution Banner -->
 <section class="section has-background-primary">
@@ -290,8 +398,8 @@
       </div>
       <div class="column is-5 ml-auto">
         <div class="mx-auto box p-6 has-background-light has-text-centered">
-          <a class="button is-link is-fullwidth" id="contribute-button"
-            href="mailto:help@openandroidinstaller.org">Write a mail</a>
+          <a class="button is-link is-fullwidth hover-transition" id="contribute-button"
+            href="mailto:help@openandroidinstaller.org">Write an e-mail</a>
         </div>
       </div>
     </div>
@@ -299,7 +407,7 @@
 </section>
 <!-- Contribution Banner End -->
 
-    <!-- Main END -->
+    <!-- Main End -->
 
     <!-- Footer -->
     <footer class="section">
@@ -308,10 +416,10 @@
           <div class="mr-auto mb-2">
             <div class="is-inline-block">
               <a href="https://openandroidinstaller.org">
-                <img class="image is-96x96" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo">
+                <img class="image is-96x96 round" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo">
               </a>
             </div>
-            <div class="is-inline-block" style="width: 333px;">
+            <div class="is-inline-block" id="pf-funding-logos">
               <figure class="image">
                 <img src="static/pf_funding_logos.svg" alt="BMBF logo">
               </figure>
@@ -319,38 +427,39 @@
           </div>
           <div>
             <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
-              <li class="mr-4"><a class="button is-white"
+              <li class="mr-4"><a class="button is-white hover-transition"
                   href="https://github.com/openandroidinstaller-dev/openandroidinstaller-dev.github.io/files/10787205/press-kit-openandroidinstaller.zip"
-                  target="_blank">Download press kit</a></li>
-              <li class="mr-4"><a class="button is-white"
+                  rel="noopener" target="_blank">Download press kit</a></li>
+              <li class="mr-4"><a class="button is-white hover-transition"
                   href="https://github.com/openandroidinstaller-dev/openandroidinstaller#acknowledgements"
-                  target="_blank">Funding</a></li>
-              <li class="mr-4"><a class="button is-white"
+                  rel="noopener" target="_blank">Funding</a></li>
+              <li class="mr-4"><a class="button is-white hover-transition"
                   href="https://github.com/openandroidinstaller-dev/openandroidinstaller/blob/main/LICENSE"
-                  target="_blank">License</a></li>
-              <li class="mr-4"><a class="button is-white"
-                  href="https://openandroidinstaller.org/imprint.html">Impressum</a></li>
-              <li class="mr-4"><a class="button is-white" href="https://openandroidinstaller.org/privacy.html">Privacy
-                  Statement</a></li>
+                  rel="noopener" target="_blank">License</a></li>
+              <li class="mr-4"><a class="button is-white hover-transition" href="imprint.html">Impressum</a></li>
+              <li class="mr-4"><a class="button is-white hover-transition" href="privacy.html">Privacy Statement</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+      <div class="pt-5"></div>
       <div class="container">
         <div class="is-flex-tablet is-justify-content-between is-align-items-center">
-          <p>Made with &#x1F49A;, Python and <a href="https://bulma.io/" target="_blank">Bulma</a> by Tobias Sterbak.
-            All rights reserved © OpenAndroidInstaller 2022-2023</p>
+          <p>Made with &#x1F49A;, Python and <a href="https://bulma.io" rel="noopener" target="_blank">Bulma</a> by
+            Tobias Sterbak. All rights reserved © OpenAndroidInstaller 2022-2023</p>
           <div class="py-2 is-hidden-tablet"></div>
           <div class="ml-auto">
-            <a class="mr-4 is-inline-block" href="https://github.com/openandroidinstaller-dev/openandroidinstaller"
-              target="_blank">
+            <a class="mr-4 is-inline-block hover-transition"
+              href="https://github.com/openandroidinstaller-dev/openandroidinstaller" rel="noopener" target="_blank">
               <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
             </a>
-            <a class="mr-4 is-inline-block" href="https://twitter.com/OAInstaller" target="_blank">
+            <a class="mr-4 is-inline-block hover-transition" href="https://twitter.com/OAInstaller" rel="noopener"
+              target="_blank">
               <span class="icon"><i class="fab fa-twitter"></i></span><span>Twitter</span>
             </a>
-            <a rel="me" class="mr-4 is-inline-block" href="https://fosstodon.org/@openandroidinstaller" target="_blank">
+            <a class="mr-4 is-inline-block hover-transition" href="https://fosstodon.org/@openandroidinstaller"
+              rel="me noopener" target="_blank">
               <span class="icon"><i class="fab fa-mastodon"></i></span><span>Mastodon</span>
             </a>
           </div>
@@ -360,8 +469,8 @@
     <!-- Footer End -->
   </div>
 </body>
-<link rel="stylesheet" href="static/all.min.css" >
-<!-- Track button clicks-->
+<link rel="stylesheet" href="static/all.min.css">
+<!-- Track button clicks -->
 <script>
   document.getElementById('download-header').addEventListener("click", function () { plausible('download-header'); });
   document.getElementById('download-banner').addEventListener("click", function () { plausible('download-banner'); });
@@ -369,7 +478,7 @@
   document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
   document.getElementById('getting-started-button').addEventListener("click", function () { plausible('getting-started'); });
 </script>
-<!--Automatically close all the other <details> tags after opening a specific <details> tag-->
+<!--Automatically close all the other <details> tags after opening a specific <details> tag -->
 <script>
   // Fetch all the details element.
   const details = document.querySelectorAll("details");
@@ -386,7 +495,7 @@
     });
   });
 </script>
-<!--Script for vertical tabs-->
+<!--Script for vertical tabs -->
 <script>
   function openTab(event, tabName) {
     // Declare all variables
