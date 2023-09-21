@@ -6,6 +6,10 @@ html {
   list-style: unset;
 }
 
+.round {
+  border-radius: 4px;
+}
+
 #pf-funding-logos {
   width: 333px;
 }
