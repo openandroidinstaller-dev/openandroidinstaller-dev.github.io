@@ -10,6 +10,14 @@ html {
   border-radius: 4px;
 }
 
+.hover-transition {
+  transition: ease-in 250ms;
+}
+
+.hover-transition:hover {
+  transition: ease-in 250ms;
+}
+
 #pf-funding-logos {
   width: 333px;
 }
