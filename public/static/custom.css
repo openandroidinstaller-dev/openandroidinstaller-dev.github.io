@@ -2,6 +2,61 @@ html {
   scroll-behavior: smooth;
 }
 
+.px-6 ul {
+  list-style: unset;
+}
+
+.round {
+  border-radius: 4px;
+}
+
+.hover-transition {
+  transition: ease-in 250ms;
+}
+
+.hover-transition:hover {
+  transition: ease-in 250ms;
+}
+
+#pf-funding-logos {
+  width: 333px;
+}
+
+.pt-5 {
+  border-top: 1px solid #dee2e6;
+}
+
+#user {
+  display: block;
+}
+
+/*Donation options*/
+
+#donate-widgets {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.opencollective,
+#gh-sponsors {
+  display: flex !important;
+  margin: auto !important;
+}
+
+.liberapay {
+  display: flex !important;
+  width: 50% !important;
+  margin-bottom: 10px;
+  margin-left: 46.05px !important;
+}
+
+.liberapay-nojs {
+  display: flex;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
 /* Style the tab content */
 .tabcontent {
   display: none;

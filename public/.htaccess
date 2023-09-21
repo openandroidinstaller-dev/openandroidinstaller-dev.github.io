@@ -1,0 +1,47 @@
+##START HTTP Security Header##
+
+#Content Security Policy - CSP-HEADER
+Header set Content-Security-Policy "frame-ancestors 'self'; default-src 'none'; script-src 'self' plausible.io peertube.tv opencollective.com liberapay.com; script-src-attr 'none'; script-src-elem 'self'; object-src 'self' img.shields.io; img-src 'self' opencollective.com liberapay.com; media-src 'self'; connect-src 'self'; frame-src 'self' img.shields.io peertube.tv; form-action 'self'; base-uri 'self'; font-src 'self'; style-src 'self'; style-src-elem 'self'; style-src-attr 'self';"
+
+#HTTP Content-Types
+AddCharset UTF-8 .html
+
+#Public Key Pins
+Header set Public-Key-Pins "pin-sha256=\"base64+primary==\"; pin-sha256=\"base64+backup==\"; max-age=5184000; includeSubDomains"
+
+#Strict-Transport-Security
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+#X-Content-Type-Options
+Header always set X-Content-Type-Options "nosniff"
+
+#X-Frame-Options
+Header always set X-Frame-Options "SAMEORIGIN"
+
+#X-Xss-Protection
+Header always set X-Xss-Protection "1; mode=block"
+
+#Referrer-Policy
+Header set Referrer-Policy "no-referrer, same-origin"
+
+##END HTTP Security Header##
+
+#HTTP Cache
+Header set Cache-Control "max-age=604800"
+# "max-age=604800" -> 1 Week
+# "max-age=2592000" -> 30 Days
+# "max-age=31536000" -> 1 Year
+
+Error pages
+ErrorDocument 404 404.html
+
+##START File Extensions##
+
+RewriteEngine on
+
+# Remove .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+##END File Extensions##
