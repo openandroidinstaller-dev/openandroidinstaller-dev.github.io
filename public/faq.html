@@ -221,127 +221,26 @@
         <li>Make sure your device is supported by the image up to the exact device id.
         <li>Try a different image for your device. This is especially useful for unofficial images of ROMs.</li>
       </ul>
-      <p>Of course, there are other things that can go wrong. If non of the above helps, write an email or raise an
-        issue on GitHub.
+      <p>Of course, there are other things that can go wrong. If non of the above helps, write an email or raise an issue on GitHub.
       </p>
     </div>
     <div class="notification has-background-white-bis p-6 content">
       <h3 id="unlock-bootloader" class="title is-3">Will this tool unlock my bootloader?</h3>
       <p>First of all, this tool will not help you bypass any vender locked bootloaders in non-official ways.</p>
-      <p>Devices by <em>Samsung, Google, OnePlus, Fairphone</em> and others make it relatively easy to unlock the
-        bootloader and get good support in the installer.</p>
-      <p>For some devices, it is necessary to unlock the bootloader manually. You usually need to create an account on
-        the manufacturer&#39;s website, wait for a certain time and obtain a code from there. OpenAndroidInstaller will
-        try to guide you as far as possible. These vendors include <em>Sony, Motorola and Xiaomi</em> amongst others.
-      </p>
-      <p>Other phone manufacturers no longer allow you to unlock the bootloader. Nothing can be done if you have not
-        unlocked your device in time. These manufacturers include <em>Huawei, Honor, LG and ASUS</em>. Support for these
-        manufacturers will always be very limited.</p>
       <p>
-        <b>Here is a brief overview of the bootloader policies of some of the most popular brands (may be
-          incomplete/inaccurate):</b>
+        Devices by Samsung, Google and Fairphone make it fairly easy to unlock the bootloader and receive good support
+        in the installer.
       </p>
-      <table>
-        <thead>
-          <tr>
-            <th>Brand</th>
-            <th>Flashing tool</th>
-            <th>Unlocking Method</th>
-            <th>Loss of guarantee*</th>
-            <th>Supported models</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Google</td>
-            <td>Fastboot</td>
-            <td>OEM/Flashing unlock</td>
-            <td>No</td>
-            <td>Pixel and Nexus</td>
-          </tr>
-          <tr>
-            <td>Samsung</td>
-            <td>ODIN or Heimdall</td>
-            <td>Download mode</td>
-            <td><strong>Yes</strong></td>
-            <td>Galaxy S and A series<br>(Increasing complexity <strong>on and after S10</strong>)</td>
-          </tr>
-          <tr>
-            <td>OnePlus</td>
-            <td>Fastboot</td>
-            <td>OEM/Flashing unlock</td>
-            <td>No</td>
-            <td>All</td>
-          </tr>
-          <tr>
-            <td>Fairphone</td>
-            <td>Fastboot</td>
-            <td><a href="https://support.fairphone.com/hc/en-us/articles/10492476238865-Manage-the-Bootloader">Code
-                from manufacturer</a><br>(<strong>Already unlocked until FP2</strong>)</td>
-            <td>No</td>
-            <td>All</td>
-          </tr>
-          <tr>
-            <td>Xiaomi</td>
-            <td>Fastboot</td>
-            <td><a href="https://new.c.mi.com/global/post/101245">Mi Unlock Tool</a></td>
-            <td><strong>Yes</strong></td>
-            <td>Mi 4c, Redmi Note 3, Mi Note Pro, Redmi 3, Mi 4S, Mi 5 and all devices from 2016 onwards</td>
-          </tr>
-          <tr>
-            <td>Motorola</td>
-            <td>Fastboot</td>
-            <td><a href="https://en-us.support.motorola.com/app/standalone/bootloader/unlock-your-device-a">Code from
-                manufacturer</a></td>
-            <td><strong>Yes</strong></td>
-            <td>Almost all <strong>except</strong> carrier specific models (e.g. Verizon, AT&amp;T, Tracfone) and
-              certain other models</td>
-          </tr>
-          <tr>
-            <td>Sony</td>
-            <td>Fastboot</td>
-            <td><a
-                href="https://developer.sony.com/open-source/aosp-on-xperia-open-devices/get-started/unlock-bootloader">Code
-                from manufacturer</a></td>
-            <td><strong>Yes</strong></td>
-            <td>All <strong>except</strong> XQ-CT62 (1Ⅳ US) &amp; XQ-CQ62 (5Ⅳ US)</td>
-          </tr>
-          <tr>
-            <td>Huawei</td>
-            <td>Fastboot</td>
-            <td>No official codes since 2017/2018<br>(<strong>Unofficial methods available</strong>)</td>
-            <td><strong>Yes</strong></td>
-            <td>Mate 9/9Pro, P10/P10Plus</td>
-          </tr>
-          <tr>
-            <td>Honor</td>
-            <td>Fastboot</td>
-            <td>No official codes since 2017/2018<br>(<strong>Unofficial methods available</strong>)</td>
-            <td><strong>Yes</strong></td>
-            <td>Honor 8</td>
-          </tr>
-          <tr>
-            <td>LG</td>
-            <td>Fastboot</td>
-            <td>Impossible since December 2021</td>
-            <td><strong>Yes</strong></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ASUS</td>
-            <td>Fastboot</td>
-            <td>Impossible since May 2023 (ASUS unlocking App)</td>
-            <td><strong>Yes</strong></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><strong>*</strong> In the EU you won&#39;t loose your standard 2 years of the warranty when you unlock your
-        bootloader, flash your device or root it. (<a
-          href="https://forum.xda-developers.com/t/info-eu-rooting-and-flashing-dont-void-the-warranty.1998801/">source</a>)
+      <p>
+        Some devices with require manual steps to unlock the bootloader. In general you will need to create an account
+        at a vendor website and receive some code from there. OpenAndroidInstaller will try to guide you as far as
+        possible. These vendors include Sony, Motorola, Xiaomi and OnePlus among others.
       </p>
-      <p>You can find more information about the brands and their bootloader policies <a
-          href="https://wikilibriste.fr/fr/tutoriels-android/bootloader-unlock">here</a> (in French).</p>
-
+      <p>
+        Other phone vendors stops allowing to unlock the bootloader all together. There is nothing to be done if you
+        didn't unlock your device in time. These vendors include Huawei and LG among others. Support for these vendors
+        will always be very limited.
+      </p>
     </div>
     <div class="notification has-background-white-bis p-6 content">
       <h3 id="is-it-virus" class="title is-3">Virus scanners show the tool as a virus or trojan. What is going on?
@@ -373,9 +272,7 @@
     </div>
     <div class="notification has-background-white-bis p-6 content">
       <h3 id="find-logs" class="title is-3">Where do I find the logfiles?</h3>
-      <p>For the flatpak, the logs are located in
-        <code>~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/openandroidinstaller.log</code>.
-      </p>
+      <p>For the flatpak, the logs are located in <code>~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/openandroidinstaller.log</code>.</p>
       <p>If you are running the executable directly, the logs are located in the same directory as the executable.</p>
     </div>
     <!-- Content end -->
