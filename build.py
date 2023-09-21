@@ -17,6 +17,7 @@ if __name__ == "__main__":
         "imprint.html",
         "privacy.html",
         "feedback.html",
+        "404.html",
     ]
 
     # Load template files and write the rendered HTML
