@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <!-- META -->
+  <!-- Meta -->
   <meta charset="UTF-8">
   <title>{% block title %}{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="static/custom.css">
   <link rel="icon" href="static/favicon.ico">
   <meta name="msvalidate.01" content="BADB1605403452D1F9CB0E93E71BCEA6">
+  <!-- Meta End -->
   <script defer data-domain="openandroidinstaller.org"
     src="https://plausible.io/js/script.outbound-links.file-downloads.js"></script>
   <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
@@ -56,7 +57,7 @@
 
 <body>
   <div>
-    <!-- NAV -->
+    <!-- Nav -->
     <nav class="navbar py-4">
       <div class="container is-fluid">
         <div class="navbar-brand">
@@ -97,7 +98,7 @@
         </div>
       </div>
     </nav>
-    <!-- NAV End -->
+    <!-- Nav End -->
 
     <!-- Main -->
     {% block content %}
@@ -165,7 +166,7 @@
   </div>
 </body>
 <link rel="stylesheet" href="static/all.min.css">
-<!-- Track button clicks-->
+<!-- Track button clicks -->
 <script>
   document.getElementById('download-header').addEventListener("click", function () { plausible('download-header'); });
   document.getElementById('download-banner').addEventListener("click", function () { plausible('download-banner'); });
@@ -173,7 +174,7 @@
   document.getElementById('contribute-button').addEventListener("click", function () { plausible('contribute-button'); });
   document.getElementById('getting-started-button').addEventListener("click", function () { plausible('getting-started'); });
 </script>
-<!--Automatically close all the other <details> tags after opening a specific <details> tag-->
+<!--Automatically close all the other <details> tags after opening a specific <details> tag -->
 <script>
   // Fetch all the details element.
   const details = document.querySelectorAll("details");
@@ -190,7 +191,7 @@
     });
   });
 </script>
-<!--Script for vertical tabs-->
+<!--Script for vertical tabs -->
 <script>
   function openTab(event, tabName) {
     // Declare all variables
