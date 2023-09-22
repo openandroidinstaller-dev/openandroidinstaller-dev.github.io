@@ -12,6 +12,7 @@ on:
   workflow_run:
     workflows:
       - Build website
+      - Build website PR
     types:
       - completed
 
