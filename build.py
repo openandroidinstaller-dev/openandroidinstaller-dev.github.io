@@ -17,6 +17,7 @@ if __name__ == "__main__":
         "imprint.html",
         "privacy.html",
         "feedback.html",
+        "404.html",
     ]
 
     # Load template files and write the rendered HTML
@@ -24,8 +25,8 @@ if __name__ == "__main__":
         # render the templates
         template = env.get_template(page)
         output = template.render(
-            version="v0.4.4-beta",
-            n_supported_devices=62,
+            version="v0.5.0-beta",
+            n_supported_devices=73,
         )
 
         # write to file
