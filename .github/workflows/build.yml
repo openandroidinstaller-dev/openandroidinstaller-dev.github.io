@@ -3,11 +3,11 @@ name: Build website
 on:  
   workflow_dispatch:
 
-  push:
-    branches:
-      - 'main'
-    paths:
-      - './templates/**'
+  #push:
+  #  branches:
+  #    - 'main'
+  #  paths:
+  #    - './templates/**'
 
 concurrency:
   group: "builders"

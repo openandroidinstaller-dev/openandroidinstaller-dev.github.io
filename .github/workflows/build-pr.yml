@@ -1,11 +1,11 @@
 name: Build website PR
 
 on:
-  pull_request:
-    branches:
-      - "main"
-    types:
-      - closed
+  #pull_request:
+  #  branches:
+  #    - "main"
+  #  types:
+  #    - closed
 
 concurrency:
   group: "builders"
