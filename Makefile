@@ -1,3 +1,11 @@
+.PHONY: help install style website
+
+help:
+	@echo "help - show this help"
+	@echo "install - install dependencies"
+	@echo "style - build css"
+	@echo "website - build website"
+
 install:
 	poetry install
 
