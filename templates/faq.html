@@ -30,6 +30,7 @@
         <li><a href="#fastboot-hangs">When flashing the custom recovery, the applications hangs and the advanced output
             shows "waiting-for-device". What can I do?</a></li>
         <li><a href="#find-logs">Where do I find the logfiles?</a></li>
+        <li><a href="#dll-missing">I get the error message "msvcp110.dll missing".</a></li>
       </ul>
     </div>
     <!-- TOC End -->
@@ -290,6 +291,15 @@
         <code>~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/openandroidinstaller.log</code>.
       </p>
       <p>If you are running the executable directly, the logs are located in the same directory as the executable.</p>
+    </div>
+    <div class="notification has-background-white-bis p-6 content">
+      <h3 id="dll-missing" class="title is-3">I get the error message "msvcp110.dll missing" on Windows.</h3>
+      <p>This error (and similar dll issues) are usually resolved by installing <a
+          href="https://www.microsoft.com/de-DE/download/details.aspx?id=30679" target="_blank">Visual C++
+          Redistributable für Visual Studio 2012</a>. Make sure to also install the 32-bit version, named
+        <code>VSU4\vcredist_x86.exe</code>, since heimdall runs on 32 bit. (To be sure, reboot the PC before trying the
+        Installer again.).
+      </p>
     </div>
     <!-- Content End -->
   </div>
