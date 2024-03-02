@@ -53,7 +53,15 @@
 
         });
       });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+      (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+        const $notification = $delete.parentNode;
 
+        $delete.addEventListener('click', () => {
+          $notification.parentNode.removeChild($notification);
+        });
+      });
     });
   </script>
 </head>
@@ -103,6 +111,14 @@
       </div>
     </nav>
     <!-- Nav End -->
+    <div class="notification is-primary is-light">
+      <button class="delete"></button>
+      <center>
+        Buy a new or refurbished smartphone equipped with a free operating system through the <a
+          href="https://murena.com/?sld=openandroidinstaller" target="_blank">murena referral program</a>! This supports
+        our project at no extra cost to you.
+      </center>
+    </div>
 
     <!-- Main -->
     
