@@ -1,10 +1,10 @@
 """Main script to build the website from jinja templates."""
+
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
 env = Environment(
-    loader=FileSystemLoader(searchpath="./templates/"),
-    autoescape=select_autoescape()
+    loader=FileSystemLoader(searchpath="./templates/"), autoescape=select_autoescape()
 )
 
 if __name__ == "__main__":
@@ -25,8 +25,8 @@ if __name__ == "__main__":
         # render the templates
         template = env.get_template(page)
         output = template.render(
-            version="v0.5.2-beta",
-            n_supported_devices=83,
+            version="v0.5.3-beta",
+            n_supported_devices=86,
         )
 
         # write to file
