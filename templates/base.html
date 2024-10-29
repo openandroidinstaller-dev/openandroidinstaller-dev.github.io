@@ -55,113 +55,113 @@
 </head>
 
 <body>
-    <!-- Nav -->
-    <nav class="navbar py-4">
-      <div class="container is-fluid">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://openandroidinstaller.org">
-            <img class="image" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo" width="30" height="30">
+  <!-- Nav -->
+  <nav class="navbar py-4">
+    <div class="container is-fluid">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://openandroidinstaller.org">
+          <img class="image" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo" width="30" height="30">
+        </a>
+        <a class="navbar-burger round hover-transition" role="button" aria-label="menu" aria-expanded="false"
+          data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu round" id="navMenu">
+        <div class="navbar-end">
+          <a class="navbar-item round hover-transition" href="https://openandroidinstaller.org/#getting-started">
+            <span class="icon"><i class="fa fa-play"></i></span><span>Getting started</span>
           </a>
-          <a class="navbar-burger round hover-transition" role="button" aria-label="menu" aria-expanded="false"
-            data-target="navMenu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+          <a class="navbar-item round hover-transition" href="supported-devices.html">
+            <span class="icon"><i class="fa fa-mobile"></i></span><span>Supported Devices</span>
+          </a>
+          <a class="navbar-item round hover-transition" href="download.html">
+            <span class="icon"><i class="fa fa-download"></i></span><span>Download</span>
+          </a>
+          <a class="navbar-item round hover-transition" href="https://openandroidinstaller.org/#contribute">
+            <span class="icon"><i class="fa fa-heart"></i></span><span>Contribute</span>
+          </a>
+          <a class="navbar-item round hover-transition" href="faq.html">
+            <span class="icon"><i class="fa fa-question"></i></span><span>FAQ</span>
+          </a>
+          <a class="navbar-item round hover-transition"
+            href="https://github.com/openandroidinstaller-dev/openandroidinstaller" rel="noopener" target="_blank">
+            <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
+          </a>
+          <a class="navbar-item round hover-transition" href="mailto:hello@openandroidinstaller.org">
+            <span class="icon"><i class="fa fa-envelope"></i></span><span>Get Help</span>
           </a>
         </div>
-        <div class="navbar-menu round" id="navMenu">
-          <div class="navbar-end">
-            <a class="navbar-item round hover-transition" href="https://openandroidinstaller.org/#getting-started">
-              <span class="icon"><i class="fa fa-play"></i></span><span>Getting started</span>
-            </a>
-            <a class="navbar-item round hover-transition" href="supported-devices.html">
-              <span class="icon"><i class="fa fa-mobile"></i></span><span>Supported Devices</span>
-            </a>
-            <a class="navbar-item round hover-transition" href="download.html">
-              <span class="icon"><i class="fa fa-download"></i></span><span>Download</span>
-            </a>
-            <a class="navbar-item round hover-transition" href="https://openandroidinstaller.org/#contribute">
-              <span class="icon"><i class="fa fa-heart"></i></span><span>Contribute</span>
-            </a>
-            <a class="navbar-item round hover-transition" href="faq.html">
-              <span class="icon"><i class="fa fa-question"></i></span><span>FAQ</span>
-            </a>
-            <a class="navbar-item round hover-transition"
-              href="https://github.com/openandroidinstaller-dev/openandroidinstaller" rel="noopener" target="_blank">
-              <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
-            </a>
-            <a class="navbar-item round hover-transition" href="mailto:hello@openandroidinstaller.org">
-              <span class="icon"><i class="fa fa-envelope"></i></span><span>Get Help</span>
-            </a>
-          </div>
-        </div>
       </div>
-    </nav>
-    <!-- Nav End -->
+    </div>
+  </nav>
+  <!-- Nav End -->
 
-    <!-- Main -->
-    {% block content %}
-    {% endblock %}
-    <!-- Main End -->
+  <!-- Main -->
+  {% block content %}
+  {% endblock %}
+  <!-- Main End -->
 
-    <!-- Footer -->
-    <footer class="section">
-      <div class="container">
-        <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
-          <div class="mr-auto mb-2">
-            <div class="is-inline-block">
-              <a href="https://openandroidinstaller.org">
-                <img class="image is-96x96 round" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo">
-              </a>
-            </div>
-            <div class="is-inline-block" id="pf-funding-logos">
-              <figure class="image">
-                <img src="static/pf_funding_logos.svg" alt="BMBF logo">
-              </figure>
-            </div>
+  <!-- Footer -->
+  <footer class="section">
+    <div class="container">
+      <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
+        <div class="mr-auto mb-2">
+          <div class="is-inline-block">
+            <a href="https://openandroidinstaller.org">
+              <img class="image is-96x96 round" src="static/oai-logo.jpg" alt="OpenAndroidInstaller Logo">
+            </a>
           </div>
-          <div>
-            <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
-              <li class="mr-4"><a class="button is-white hover-transition"
-                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller-dev.github.io/files/10787205/press-kit-openandroidinstaller.zip"
-                  rel="noopener" target="_blank">Download press kit</a></li>
-              <li class="mr-4"><a class="button is-white hover-transition"
-                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller#acknowledgements"
-                  rel="noopener" target="_blank">Funding</a></li>
-              <li class="mr-4"><a class="button is-white hover-transition"
-                  href="https://github.com/openandroidinstaller-dev/openandroidinstaller/blob/main/LICENSE"
-                  rel="noopener" target="_blank">License</a></li>
-              <li class="mr-4"><a class="button is-white hover-transition" href="imprint.html">Impressum</a></li>
-              <li class="mr-4"><a class="button is-white hover-transition" href="privacy.html">Privacy Statement</a>
-              </li>
-            </ul>
+          <div class="is-inline-block" id="pf-funding-logos">
+            <figure class="image">
+              <img src="static/pf_funding_logos.svg" alt="BMBF logo">
+            </figure>
           </div>
         </div>
-      </div>
-      <div class="pt-5"></div>
-      <div class="container">
-        <div class="is-flex-tablet is-justify-content-between is-align-items-center">
-          <p>Made with &#x1F49A;, Python and <a href="https://bulma.io" rel="noopener" target="_blank">Bulma</a> by
-            Tobias Sterbak. All rights reserved © OpenAndroidInstaller 2022-2023</p>
-          <div class="py-2 is-hidden-tablet"></div>
-          <div class="ml-auto">
-            <a class="mr-4 is-inline-block hover-transition"
-              href="https://github.com/openandroidinstaller-dev/openandroidinstaller" rel="noopener" target="_blank">
-              <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
-            </a>
-            <a class="mr-4 is-inline-block hover-transition" href="https://twitter.com/OAInstaller" rel="noopener"
-              target="_blank">
-              <span class="icon"><i class="fab fa-twitter"></i></span><span>Twitter</span>
-            </a>
-            <a class="mr-4 is-inline-block hover-transition" href="https://fosstodon.org/@openandroidinstaller"
-              rel="me noopener" target="_blank">
-              <span class="icon"><i class="fab fa-mastodon"></i></span><span>Mastodon</span>
-            </a>
-          </div>
+        <div>
+          <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+            <li class="mr-4"><a class="button is-white hover-transition"
+                href="https://github.com/openandroidinstaller-dev/openandroidinstaller-dev.github.io/files/10787205/press-kit-openandroidinstaller.zip"
+                rel="noopener" target="_blank">Download press kit</a></li>
+            <li class="mr-4"><a class="button is-white hover-transition"
+                href="https://github.com/openandroidinstaller-dev/openandroidinstaller#acknowledgements" rel="noopener"
+                target="_blank">Funding</a></li>
+            <li class="mr-4"><a class="button is-white hover-transition"
+                href="https://github.com/openandroidinstaller-dev/openandroidinstaller/blob/main/LICENSE" rel="noopener"
+                target="_blank">License</a></li>
+            <li class="mr-4"><a class="button is-white hover-transition" href="imprint.html">Impressum</a></li>
+            <li class="mr-4"><a class="button is-white hover-transition" href="privacy.html">Privacy Statement</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <!-- Footer End -->
+    </div>
+    <div class="pt-5"></div>
+    <div class="container">
+      <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+        <p>Made with &#x1F49A;, Python and <a href="https://bulma.io" rel="noopener" target="_blank">Bulma</a> by
+          Tobias Sterbak. All rights reserved © OpenAndroidInstaller 2022-2024</p>
+        <div class="py-2 is-hidden-tablet"></div>
+        <div class="ml-auto">
+          <a class="mr-4 is-inline-block hover-transition"
+            href="https://github.com/openandroidinstaller-dev/openandroidinstaller" rel="noopener" target="_blank">
+            <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
+          </a>
+          <a class="mr-4 is-inline-block hover-transition" href="https://twitter.com/OAInstaller" rel="noopener"
+            target="_blank">
+            <span class="icon"><i class="fab fa-twitter"></i></span><span>Twitter</span>
+          </a>
+          <a class="mr-4 is-inline-block hover-transition" href="https://fosstodon.org/@openandroidinstaller"
+            rel="me noopener" target="_blank">
+            <span class="icon"><i class="fab fa-mastodon"></i></span><span>Mastodon</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
   </div>
 </body>
 <link rel="stylesheet" href="static/all.min.css">
