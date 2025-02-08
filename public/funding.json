@@ -1,0 +1,98 @@
+{
+    "version": "v1.0.0",
+    "entity": {
+        "type": "individual",
+        "role": "maintainer",
+        "name": "Tobias Sterbak",
+        "email": "contact@openandroidinstaller.org",
+        "phone": "",
+        "description": "Tobias Sterbak is the original developer and maintainer of OpenAndroidInstaller—a free, open source graphical installer that makes installing alternative Android distributions easy.",
+        "webpageUrl": {
+            "url": "https://openandroidinstaller.org/"
+        }
+    },
+    "projects": [
+        {
+            "guid": "openandroidinstaller",
+            "name": "OpenAndroidInstaller",
+            "description": "A graphical installer that helps Android users install alternative distributions (such as LineageOS, /e/OS, and others) with ease.",
+            "webpageUrl": {
+                "url": "https://openandroidinstaller.org"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/openandroidinstaller-dev/openandroidinstaller",
+                "wellKnown": "https://github.com/openandroidinstaller-dev/openandroidinstaller/*/.well-known/funding-manifest-urls"
+            },
+            "licenses": [
+                "spdx:GPL-3.0"
+            ],
+            "tags": [
+                "android",
+                "installer",
+                "open-source",
+                "customrom",
+                "lineageos"
+            ]
+        }
+    ],
+    "funding": {
+        "channels": [
+            {
+                "guid": "mybank",
+                "type": "bank",
+                "address": "",
+                "description": "Will accept direct bank transfers. Please e-mail me for details."
+            },
+            {
+                "guid": "liberapay",
+                "type": "payment-provider",
+                "address": "https://liberapay.com/OpenAndroidInstaller",
+                "description": "Support OpenAndroidInstaller via Liberapay."
+            },
+            {
+                "guid": "open-collective",
+                "type": "payment-provider",
+                "address": "https://opencollective.com/openandroidinstaller",
+                "description": "Support OpenAndroidInstaller via Open Collective."
+            }
+        ],
+        "plans": [
+            {
+                "guid": "developer-time",
+                "status": "active",
+                "name": "Developer compensation",
+                "description": "This will cover the cost of one developer working part-time on the projects.",
+                "amount": 1000,
+                "currency": "EUR",
+                "frequency": "monthly",
+                "channels": [
+                    "mybank",
+                    "open-collective"
+                ]
+            },
+            {
+                "guid": "angel-plan",
+                "status": "active",
+                "name": "Goodwill plan",
+                "description": "Pay anything you wish to show your goodwill for the project.",
+                "amount": 0,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": [
+                    "mybank",
+                    "open-collective"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "year": 2022,
+                "income": 50000,
+                "expenses": 50000,
+                "taxes": 0,
+                "currency": "EUR",
+                "description": "Received grant support from the German Federal Ministry for Education and Research (grant 01IS22S26) from September 2022 to February 2023."
+            }
+        ]
+    }
+}
