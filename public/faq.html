@@ -130,6 +130,7 @@
             shows "waiting-for-device". What can I do?</a></li>
         <li><a href="#find-logs">Where do I find the logfiles?</a></li>
         <li><a href="#dll-missing">I get the error message "msvcp110.dll missing".</a></li>
+        <li><a href="#data-collection">Collection of anonymous usage data</a></li>
       </ul>
     </div>
     <!-- TOC End -->
@@ -398,6 +399,18 @@
           Redistributable für Visual Studio 2012</a>. Make sure to also install the 32-bit version, named
         <code>VSU4\vcredist_x86.exe</code>, since heimdall runs on 32 bit. (To be sure, reboot the PC before trying the
         Installer again.).
+      </p>
+    </div>
+    <div class="notification has-background-white-bis p-6 content">
+      <h3 id="data-collection" class="title is-3">Collection of anonymous usage data</h3>
+      <p>The OpenAndroidInstaller application collects anonymous usage data to help us improve the application. This
+        data is collected using <a href="https://plausible.io" target="_blank">Plausible Analytics</a> and is stored on
+        their servers. We do not collect any personal data, and we do not track individual users. We only collect the
+        device code when the
+        installation process is started and finished to see which devices are most commonly used with the application.
+        The code is available in the function <a
+          href="https://github.com/openandroidinstaller-dev/openandroidinstaller/blob/55eba7f585128a1b73be6695a6d663a2686bf793/openandroidinstaller/utils.py#L193"
+          target="_blank">`send_tracking_info` in the `openandroidinstaller/utils.py`</a> file.
       </p>
     </div>
     <!-- Content End -->
