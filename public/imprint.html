@@ -58,6 +58,25 @@
 </head>
 
 <body>
+  <div class="notification is-warning is-radiusless mb-0 top-warning" id="top-warning">
+  <button
+    class="top-warning-close"
+    aria-label="Close notification"
+    onclick="document.getElementById('top-warning').remove()"
+  >
+    &times;
+  </button>
+
+  <div class="top-warning-content">
+    <span class="top-warning-icon" aria-hidden="true">⚠</span>
+
+    <div>
+      <strong>This application is currently not actively maintained!</strong><br>
+      Everything is provided as is. Please don't expect bug fixes or new features
+      for now.
+    </div>
+  </div>
+  </div>
   <!-- Nav -->
   <nav class="navbar py-4">
     <div class="container is-fluid">
@@ -92,9 +111,6 @@
           <a class="navbar-item round hover-transition"
             href="https://github.com/openandroidinstaller-dev/openandroidinstaller" rel="noopener" target="_blank">
             <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
-          </a>
-          <a class="navbar-item round hover-transition" href="mailto:hello@openandroidinstaller.org">
-            <span class="icon"><i class="fa fa-envelope"></i></span><span>Get Help</span>
           </a>
         </div>
       </div>
@@ -223,7 +239,7 @@ Gottschedstraße 4
     <div class="container">
       <div class="is-flex-tablet is-justify-content-between is-align-items-center">
         <p>Made with &#x1F49A;, Python and <a href="https://bulma.io" rel="noopener" target="_blank">Bulma</a> by
-          Tobias Sterbak. All rights reserved © OpenAndroidInstaller 2022-2025</p>
+          Tobias Sterbak. All rights reserved © OpenAndroidInstaller 2022-2026</p>
         <div class="py-2 is-hidden-tablet"></div>
         <div class="ml-auto">
           <a class="mr-4 is-inline-block hover-transition"

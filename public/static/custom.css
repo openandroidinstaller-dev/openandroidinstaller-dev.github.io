@@ -61,3 +61,43 @@ html {
 .tabcontent {
   display: none;
 }
+
+.top-warning {
+  position: relative;
+  padding: 1rem 4rem 1rem 1.25rem;
+}
+
+.top-warning-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.top-warning-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.top-warning-close {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: transparent;
+
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.top-warning-close:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
